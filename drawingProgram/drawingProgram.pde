@@ -1,5 +1,7 @@
 //Global Variables
 //
+//color set
+color backgroundColor=#69585F;
 //canvas
 float canvasX, canvasY, canvasWidth, canvasHeight;
 //quit button
@@ -11,6 +13,7 @@ float quitButX, quitButY, quitButWidth, quitButHeight;
 
 void setup() {
   fullScreen();
+  background(backgroundColor);
   population();
   //
   //canvas
