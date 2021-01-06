@@ -1,7 +1,7 @@
 //Global Variables
 //
 //color set
-color backgroundColor=#69585F;
+color backgroundColor=#69585F, textColor=#FFFFFF, reset=#FFFFFF, quitButColor=#F2161D;
 //canvas
 float canvasX, canvasY, canvasWidth, canvasHeight;
 //quit button
@@ -25,9 +25,7 @@ void setup() {
 
 
 void draw() {
-  
-  
-  
+  quitButton();
 }//end of draw
 
 
