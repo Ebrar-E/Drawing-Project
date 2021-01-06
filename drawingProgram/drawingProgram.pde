@@ -1,19 +1,19 @@
 //Global Variables
+float rectX, rectY, rectWidth, rectHeight;
 
 
 
 
-
-void setup() {}
-
-
-
-void draw() {}
+void setup() {}//end of setup
 
 
 
-void keyPressed() {}
+void draw() {}//end of draw
 
 
 
-void mousePressed() {}
+void keyPressed() {}//end of keyPressed
+
+
+
+void mousePressed() {}//end of mousePressed
