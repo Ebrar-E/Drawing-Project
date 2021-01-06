@@ -1,7 +1,7 @@
 void paletteButtonInfo() {
   String paletteButText="Color Palette";
   PFont paletteFont;
-  paletteFont = createFont ("Gabriola", 95);
+  paletteFont = createFont ("Gabriola", 60);
   //
   fill(textColor);
   textAlign(CENTER, CENTER);
@@ -28,6 +28,7 @@ void paletteButton() {
     rect(paletteX, paletteY, paletteWidth, paletteHeight);
     stroke (reset);
     fill(reset);
+    paletteButtonInfo();
   }
 }//end of paletteButton
   

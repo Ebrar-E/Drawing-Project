@@ -2,7 +2,7 @@
 //
 //color set
 color backgroundColor=#205072, textColor=#FFFFFF, reset=#FFFFFF, quitButColor=#F2161D;
-color quitButHoverOver=#D30F15, paletteColor=#329D9C, paletteHoverOver=#4DD9D8;
+color quitButHoverOver=#D30F15, paletteColor=#4DD9D8, paletteHoverOver=#329D9C;
 //canvas
 float canvasX, canvasY, canvasWidth, canvasHeight;
 //quit button
