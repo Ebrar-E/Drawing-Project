@@ -1,3 +1,5 @@
+void quitButtonInfo() {}//end of quitButtonInfo
 
 
-void quitButton() {}
+
+void quitButton() {}//end of quitButton
