@@ -1,6 +1,4 @@
-
-
-void quitButtonInfo() {
+void quitButInfo() {
   String quitButText="X";
   PFont quitFont;
   quitFont = createFont ("Gabriola", 95);
@@ -11,15 +9,15 @@ void quitButtonInfo() {
   //
   text(quitButText, quitButX, quitButY, quitButWidth, quitButHeight);
   fill(reset);
-}//end of quitButtonInfo
+}//end of colorPalette
 
 
 
 void quitButton() {
-  if (mouseX>quitButX && mouseX<quitButX+quitButWidth  && mouseY>quitButY && mouseY<quitButY+quitButHeight) {
+  if (mouseX>paletteButX && mouseX<paletteButX+paletteButWidth  && mouseY>paletteButY && mouseY<paletteButY+paletteButHeight) {
     stroke (quitButColor);
     fill (quitButColor);
-    rect(quitButX, quitButY, quitButWidth, quitButHeight);
+    rect(paletteButX, paletteButY, paletteButWidth, paletteButHeight);
     stroke (reset);
     fill(reset);
     quitButtonInfo();
