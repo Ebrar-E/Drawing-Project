@@ -9,6 +9,8 @@ float canvasX, canvasY, canvasWidth, canvasHeight;
 float quitButX, quitButY, quitButWidth, quitButHeight;
 //color Palette
 float paletteX, paletteY, paletteWidth, paletteHeight;
+//pencil case
+float caseX, caseY, caseWidth, caseHeight;
 
 
 
