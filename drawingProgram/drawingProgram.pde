@@ -5,8 +5,10 @@ float rectX, rectY, rectWidth, rectHeight;
 
 
 void setup() {
-  size(600, 400);
+  fullScreen();
   population();
+  
+  rect(rectX, rectY, rectWidth, rectHeight);
 }//end of setup
 
 
@@ -14,7 +16,7 @@ void setup() {
 void draw() {
   
   
-  rect(rectX, rectY, rectWidth, rectHeight);
+  
 }//end of draw
 
 

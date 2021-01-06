@@ -1,6 +1,6 @@
 void population() {
-  rectX = 2/5*width;
-  rectY = 1/4*height;
-  rectWidth = 3/4*width;
-  rectHeight = 2/4*height;
+  rectX = width*1/4;
+  rectY = height*1/4;
+  rectWidth = width*3/6;
+  rectHeight = height*3/6;
 }//end of population
