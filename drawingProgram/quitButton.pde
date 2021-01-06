@@ -1,11 +1,11 @@
 void quitButtonInfo() {
   String quitButText="X";
   PFont quitFont;
-  quitFont = createFont ("Gabriola", 45);
+  quitFont = createFont ("Gabriola", 95);
   //
   fill(textColor);
   textAlign(CENTER, CENTER);
-  textFont(quitFont, 23);
+  textFont(quitFont, 30);
   //
   text(quitButText, quitButX, quitButY, quitButWidth, quitButHeight);
   fill(reset);
