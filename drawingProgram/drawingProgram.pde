@@ -1,5 +1,10 @@
 //Global Variables
-float rectX, rectY, rectWidth, rectHeight;
+//
+//canvas
+float canvasX, canvasY, canvasWidth, canvasHeight;
+//quit button
+float quitButX, quitButY, quitButWidth, quitButHeight;
+
 
 
 
@@ -7,8 +12,11 @@ float rectX, rectY, rectWidth, rectHeight;
 void setup() {
   fullScreen();
   population();
-  
-  rect(rectX, rectY, rectWidth, rectHeight);
+  //
+  //canvas
+  rect(canvasX, canvasY, canvasWidth, canvasHeight);
+  //quit button
+  rect(quitButX, quitButY, quitButWidth, quitButHeight);
 }//end of setup
 
 
