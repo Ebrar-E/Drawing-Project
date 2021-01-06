@@ -31,6 +31,7 @@ void setup() {
 
 void draw() {
   quitButton();
+  paletteButton();
 }//end of draw
 
 

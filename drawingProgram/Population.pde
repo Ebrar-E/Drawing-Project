@@ -11,7 +11,7 @@ void population() {
   quitButHeight = height*1/25;
   //color palette
   paletteX = width*1/20;
-  paletteY = height*1/20;
-  paletteWidth = width*1/15;
-  paletteHeight = height*1/25;
+  paletteY = height*2/20;
+  paletteWidth = width*1/10;
+  paletteHeight = height*1/10;
 }//end of population

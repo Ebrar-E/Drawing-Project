@@ -4,8 +4,8 @@ void paletteButtonInfo() {
   paletteFont = createFont ("Gabriola", 95);
   //
   fill(textColor);
-  textAlign(CENTER, TOP);
-  textFont(paletteFont, 30);
+  textAlign(CENTER, CENTER);
+  textFont(paletteFont, 40);
   //
   text(paletteButText, paletteX, paletteY, paletteWidth, paletteHeight);
   fill(reset);
