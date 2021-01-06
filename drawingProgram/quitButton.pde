@@ -14,13 +14,13 @@ void quitButInfo() {
 
 
 void quitButton() {
-  if (mouseX>paletteButX && mouseX<paletteButX+paletteButWidth  && mouseY>paletteButY && mouseY<paletteButY+paletteButHeight) {
+  if (mouseX>quitButX && mouseX<quitButX+quitButWidth  && mouseY>quitButY && mouseY<quitButY+quitButHeight) {
     stroke (quitButColor);
     fill (quitButColor);
-    rect(paletteButX, paletteButY, paletteButWidth, paletteButHeight);
+    rect(quitButX, quitButY, quitButWidth, quitButHeight);
     stroke (reset);
     fill(reset);
-    quitButtonInfo();
+    quitButInfo();
   } else {
     strokeWeight(4);
     stroke (quitButHoverOver);
@@ -28,6 +28,6 @@ void quitButton() {
     rect(quitButX, quitButY, quitButWidth, quitButHeight);
     stroke (reset);
     fill(reset);
-    quitButtonInfo();
+    quitButInfo();
   }
 }//end of quitButton

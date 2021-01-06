@@ -23,8 +23,8 @@ void paletteButton() {
     paletteButtonInfo();
   } else {
     strokeWeight(4);
-    stroke (quitButHoverOver);
-    fill (quitButHoverOver);
+    stroke (paletteHoverOver);
+    fill (paletteHoverOver);
     rect(paletteX, paletteY, paletteWidth, paletteHeight);
     stroke (reset);
     fill(reset);
