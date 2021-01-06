@@ -1,3 +1,5 @@
+
+
 void quitButtonInfo() {
   String quitButText="X";
   PFont quitFont;
@@ -14,8 +16,20 @@ void quitButtonInfo() {
 
 
 void quitButton() {
-  fill(quitButColor);
-  stroke(quitButColor);
-  rect(quitButX, quitButY, quitButWidth, quitButHeight);
-  quitButtonInfo();
+  if (mouseX>quitButX && mouseX<quitButX+quitButWidth  && mouseY>quitButY && mouseY<quitButY+quitButHeight) {
+    stroke (quitButColor);
+    fill (quitButColor);
+    rect(quitButX, quitButY, quitButWidth, quitButHeight);
+    stroke (reset);
+    fill(reset);
+    quitButtonInfo();
+  } else {
+    strokeWeight(4);
+    stroke (quitButHoverOver);
+    fill (quitButHoverOver);
+    rect(quitButX, quitButY, quitButWidth, quitButHeight);
+    stroke (reset);
+    fill(reset);
+    quitButtonInfo();
+  }
 }//end of quitButton

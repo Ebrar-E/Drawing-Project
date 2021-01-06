@@ -5,7 +5,7 @@ void population() {
   canvasWidth = width*3/6;
   canvasHeight = height*3/6;
   //quit
-  quitButX = width*38/40; 
+  quitButX = width*58/60; 
   quitButY = height*0/40;
   quitButWidth = width*1/30;
   quitButHeight = height*1/25;
