@@ -10,8 +10,8 @@ void population() {
   quitButWidth = width*1/30;
   quitButHeight = height*1/25;
   //color palette
-  paletteX = width*1/20;
+  paletteX = width*1/30;
   paletteY = height*2/20;
-  paletteWidth = width*1/10;
-  paletteHeight = height*1/10;
+  paletteWidth = width*4/30;
+  paletteHeight = height*2/30;
 }//end of population
