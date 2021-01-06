@@ -6,7 +6,7 @@ void quitButtonInfo() {
   quitFont = createFont ("Gabriola", 95);
   //
   fill(textColor);
-  textAlign(CENTER, CENTER);
+  textAlign(CENTER, TOP);
   textFont(quitFont, 30);
   //
   text(quitButText, quitButX, quitButY, quitButWidth, quitButHeight);
