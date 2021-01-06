@@ -14,4 +14,9 @@ void population() {
   paletteY = height*2/20;
   paletteWidth = width*4/30;
   paletteHeight = height*2/30;
+  //pencil case
+  caseX = width*25.5/30;
+  caseY = height*2/20;
+  caseWidth = width*4/30;
+  caseHeight = height*2/30;
 }//end of population
