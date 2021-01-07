@@ -35,6 +35,9 @@ void setup() {
   rect(paletteX, paletteY, paletteWidth, paletteHeight);
   //pencil case
   rect(caseX, caseY, caseWidth, caseHeight);
+  //
+  //undo
+  undo = new Undo(10);
 }//end of setup
 
 
@@ -43,6 +46,9 @@ void draw() {
   quitButton();
   paletteButton();
   caseButton();
+  //the lines
+  if (mousePressed)
+    line(mouseX, mouseY, pmouseX, pmouseY);
 }//end of draw
 
 
