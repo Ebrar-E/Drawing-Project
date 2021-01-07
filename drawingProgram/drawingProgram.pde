@@ -54,6 +54,14 @@ void draw() {
 
 
 void keyPressed() {
+  //to remind if you clicked CTRL or SHIFT 
+  if (key == CODED) {
+    if (keyCode == CONTROL) 
+      controlDown = true;
+    if (keyCode == SHIFT)
+      shiftDown = true;
+    return;
+  } 
 }//end of keyPressed
 
 
