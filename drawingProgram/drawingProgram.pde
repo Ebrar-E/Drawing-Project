@@ -12,6 +12,11 @@ float paletteX, paletteY, paletteWidth, paletteHeight;
 //pencil case
 float caseX, caseY, caseWidth, caseHeight;
 
+//
+//the booleans
+boolean controlDown = false;
+boolean shiftDown = false;
+
 
 
 
