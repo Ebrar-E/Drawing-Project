@@ -62,6 +62,19 @@ void keyPressed() {
       shiftDown = true;
     return;
   } 
+  //to know if it was a redo(control shift Z) or an undo(control Z)
+    if (controlDown) {
+    if (keyCode == 'Z') {
+      if (shiftDown)
+        undo.redo();
+      else
+        undo.undo();
+    }
+    return;
+    if (key=='s') {
+    saveFrame("image####.png");
+  }
+    }
 }//end of keyPressed
 
 
