@@ -15,16 +15,16 @@ void caseButtonInfo() {
 
 void caseButton() {
   if (mouseX>caseX && mouseX<caseX+caseWidth  && mouseY>caseY && mouseY<caseY+caseHeight) {
-    stroke (caseColor);
-    fill (caseColor);
+    stroke (buttonColor);
+    fill (buttonColor);
     rect(caseX, caseY, caseWidth, caseHeight);
     stroke (reset);
     fill(reset);
     caseButtonInfo();
   } else {
     strokeWeight(4);
-    stroke (caseHoverOver);
-    fill (caseHoverOver);
+    stroke (buttonHoverOver);
+    fill (buttonHoverOver);
     rect(caseX, caseY, caseWidth, caseHeight);
     stroke (reset);
     fill(reset);

@@ -15,16 +15,16 @@ void paletteButtonInfo() {
 
 void paletteButton() {
   if (mouseX>paletteX && mouseX<paletteX+paletteWidth  && mouseY>paletteY && mouseY<paletteY+paletteHeight) {
-    stroke (paletteColor);
-    fill (paletteColor);
+    stroke (buttonColor);
+    fill (buttonColor);
     rect(paletteX, paletteY, paletteWidth, paletteHeight);
     stroke (reset);
     fill(reset);
     paletteButtonInfo();
   } else {
     strokeWeight(4);
-    stroke (paletteHoverOver);
-    fill (paletteHoverOver);
+    stroke (buttonHoverOver);
+    fill (buttonHoverOver);
     rect(paletteX, paletteY, paletteWidth, paletteHeight);
     stroke (reset);
     fill(reset);

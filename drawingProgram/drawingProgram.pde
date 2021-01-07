@@ -1,9 +1,8 @@
 //Global Variables
 //
 //color set
-color backgroundColor=#205072, textColor=#FFFFFF, reset=#FFFFFF, quitButColor=#F2161D;
-color quitButHoverOver=#D30F15, paletteColor=#4DD9D8, paletteHoverOver=#329D9C;
-color caseColor=#8DDAB9, caseHoverOver=#56C596;
+color backgroundColor=#0B032D, textColor=#FFFFFF, reset=#FFFFFF, quitButColor=#F2161D;
+color quitButHoverOver=#D30F15, buttonColor=#843B62, buttonHoverOver=#621940, strokeColor=#F67E7D;
 //canvas
 float canvasX, canvasY, canvasWidth, canvasHeight;
 //quit button
@@ -23,6 +22,7 @@ void setup() {
   population();
   //
   //canvas
+  
   rect(canvasX, canvasY, canvasWidth, canvasHeight);
   //quit button
   rect(quitButX, quitButY, quitButWidth, quitButHeight);
