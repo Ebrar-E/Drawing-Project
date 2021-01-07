@@ -27,7 +27,7 @@ void setup() {
   population();
   //
   //canvas
-  
+
   rect(canvasX, canvasY, canvasWidth, canvasHeight);
   //quit button
   rect(quitButX, quitButY, quitButWidth, quitButHeight);
@@ -63,7 +63,7 @@ void keyPressed() {
     return;
   } 
   //to know if it was a redo(control shift Z) or an undo(control Z)
-    if (controlDown) {
+  if (controlDown) {
     if (keyCode == 'Z') {
       if (shiftDown)
         undo.redo();
@@ -72,15 +72,29 @@ void keyPressed() {
     }
     return;
     if (key=='s') {
-    saveFrame("image####.png");
-  }
+      saveFrame("image####.png");
     }
+  }
 }//end of keyPressed
+
+void keyreleased() {
+  if (key == CODED) {
+    if (keyCode == CONTROL) 
+      controlDown = false;
+    if (keyCode == SHIFT)
+      shiftDown = false;
+  }
+}//end of keyReleased 
 
 
 
 void mousePressed() {
   if ( mouseX>quitButX  && mouseX<quitButX+quitButWidth  && mouseY>quitButY && mouseY<quitButY+quitButHeight ) {
-     {exit();}
+    {
+      exit();
+    }
   }
 }//end of mousePressed
+
+
+//the confusing part 
