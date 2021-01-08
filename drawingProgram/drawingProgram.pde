@@ -37,6 +37,7 @@ void setup() {
   population();
   //
   //canvas
+  
 
   rect(canvasX, canvasY, canvasWidth, canvasHeight);
   //quit button
