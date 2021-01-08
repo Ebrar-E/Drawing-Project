@@ -9,7 +9,7 @@ void lineArtInfo() {
   //
   text(lineArtText, artX, artY, artWidth, artHeight);
   fill(reset);
-}//end of caseButtonInfo
+}//end of lineArtInfo
 
 
 
@@ -30,5 +30,5 @@ void artButton() {
     fill(reset);
     lineArtInfo();
   }
-}//end of paletteButton
+}//end of artButton
   

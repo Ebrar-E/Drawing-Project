@@ -31,7 +31,12 @@ void population() {
   clearHeight = height*2/30;
   //undo
   undoX = width*13/30;
-  undoY = height*2/20;;
+  undoY = height*2/20;
   undoWidth = width*1/30;
   undoHeight = height*1.5/30;
+  //redo
+  redoX = width*15/30;
+  redoY = height*2/20;
+  redoWidth = width*1/30;
+  redoHeight = height*1.5/30;
 }//end of population

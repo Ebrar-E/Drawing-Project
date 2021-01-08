@@ -9,7 +9,7 @@ void undoInfo() {
   //
   text(undoText, undoX, undoY, undoWidth, undoHeight);
   fill(reset);
-}//end of caseButtonInfo
+}//end of undoInfo
 
 
 
@@ -30,4 +30,44 @@ void undoButton() {
     fill(reset);
     undoInfo();
   }
-}//end of paletteButton
+}//end of undobutton
+
+
+
+
+
+
+
+void redoInfo() {
+  String redoText="Redo";
+  PFont redoFont;
+  redoFont = createFont ("Gabriola", 60);
+  //
+  fill(textColor);
+  textAlign(CENTER, CENTER);
+  textFont(redoFont, 25);
+  //
+  text(redoText, redoX, redoY, redoWidth, redoHeight);
+  fill(reset);
+}//end of undoInfo
+
+
+
+void redoButton() {
+  if (mouseX>redoX && mouseX<redoX+redoWidth  && mouseY>redoY && mouseY<redoY+redoHeight) {
+    stroke (buttonColor2);
+    fill (buttonColor2);
+    rect(redoX, redoY, redoWidth, redoHeight);
+    stroke (reset);
+    fill(reset);
+    redoInfo();
+  } else {
+    strokeWeight(4);
+    stroke (buttonHoverOver2);
+    fill (buttonHoverOver2);
+    rect(redoX, redoY, redoWidth, redoHeight);
+    stroke (reset);
+    fill(reset);
+    redoInfo();
+  }
+}//end of undobutton

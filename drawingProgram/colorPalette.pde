@@ -9,7 +9,7 @@ void paletteButtonInfo() {
   //
   text(paletteButText, paletteX, paletteY, paletteWidth, paletteHeight);
   fill(reset);
-}//end of quitButtonInfo
+}//end of paletteButtonInfo
 
 
 

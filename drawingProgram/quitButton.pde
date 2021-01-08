@@ -9,7 +9,7 @@ void quitButInfo() {
   //
   text(quitButText, quitButX, quitButY, quitButWidth, quitButHeight);
   fill(reset);
-}//end of colorPalette
+}//end of quitButInfo
 
 
 

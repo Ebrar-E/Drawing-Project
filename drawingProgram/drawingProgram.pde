@@ -17,6 +17,8 @@ float artX, artY, artWidth, artHeight;
 float clearX, clearY, clearWidth, clearHeight;
 //undo 
 float undoX, undoY, undoWidth, undoHeight;
+//redo
+float redoX, redoY, redoWidth, redoHeight;
 
 //
 //the booleans
@@ -47,6 +49,8 @@ void setup() {
   rect(clearX, clearY, clearWidth, clearHeight);
   //undo
   rect(undoX, undoY, undoWidth, undoHeight);
+  //redo
+  rect(redoX, redoY, redoWidth, redoHeight);
   //
   //
   undo = new Undo(10);
@@ -66,6 +70,7 @@ void draw() {
   artButton();
   clearButton();
   undoButton();
+  redoButton();
   //the lines
   stroke(blackInk);
   if (mousePressed)

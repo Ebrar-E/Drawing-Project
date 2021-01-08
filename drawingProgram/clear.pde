@@ -9,7 +9,7 @@ void clearButInfo() {
   //
   text(clearButText, clearX, clearY, clearWidth, clearHeight);
   fill(reset);
-}//end of colorPalette
+}//end of clearButInfo
 
 
 
@@ -30,4 +30,4 @@ void clearButton() {
     fill(reset);
     clearButInfo();
   }
-}//end of quitButton
+}//end of clearButton

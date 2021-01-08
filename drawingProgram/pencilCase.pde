@@ -30,5 +30,5 @@ void caseButton() {
     fill(reset);
     caseButtonInfo();
   }
-}//end of paletteButton
+}//end of caseButton
   
