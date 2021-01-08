@@ -29,4 +29,9 @@ void population() {
   clearY = height*17/20;
   clearWidth = width*4/30;
   clearHeight = height*2/30;
+  //undo
+  undoX = width*13/30;
+  undoY = height*2/20;;
+  undoWidth = width*1/30;
+  undoHeight = height*1.5/30;
 }//end of population

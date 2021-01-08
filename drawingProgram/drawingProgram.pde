@@ -2,7 +2,7 @@
 //
 //color set
 color backgroundColor=#0B032D, textColor=#FFFFFF, reset=#FFFFFF, quitButColor=#F2161D, blackInk=#000000;
-color quitButHoverOver=#D30F15, buttonColor=#843B62, buttonHoverOver=#621940, strokeColor=#F67E7D;
+color quitButHoverOver=#D30F15, buttonColor=#843B62, buttonHoverOver=#621940, strokeColor=#F67E7D, buttonColor2=#FFB997, buttonHoverOver2=#F67E7D;
 //canvas
 float canvasX, canvasY, canvasWidth, canvasHeight;
 //quit button
@@ -15,6 +15,8 @@ float caseX, caseY, caseWidth, caseHeight;
 float artX, artY, artWidth, artHeight;
 //clear
 float clearX, clearY, clearWidth, clearHeight;
+//undo 
+float undoX, undoY, undoWidth, undoHeight;
 
 //
 //the booleans
@@ -43,8 +45,10 @@ void setup() {
   rect(artX, artY, artWidth, artHeight);
   //clear
   rect(clearX, clearY, clearWidth, clearHeight);
-  //
   //undo
+  rect(undoX, undoY, undoWidth, undoHeight);
+  //
+  //
   undo = new Undo(10);
 }//end of setup
 
@@ -61,11 +65,17 @@ void draw() {
   caseButton();
   artButton();
   clearButton();
+  undoButton();
   //the lines
   stroke(blackInk);
   if (mousePressed)
     line(mouseX, mouseY, pmouseX, pmouseY);
   stroke(reset);
+  //
+  //
+  if ( controlDown == true) {
+    undoButton();
+  }
 }//end of draw
 
 
@@ -111,6 +121,10 @@ void mousePressed() {
     {
       exit();
     }
+  }
+  //
+  if ( mouseX>=undoX && mouseX<=undoX+undoWidth && mouseY>=undoY && mouseY<=undoY+undoHeight ) {
+    controlDown = true;
   }
 }//end of mousePressed
 
