@@ -24,6 +24,8 @@ float redoX, redoY, redoWidth, redoHeight;
 //the booleans
 boolean controlDown = false;
 boolean shiftDown = false;
+//
+boolean sil=false, silOn=false, ciz=false, cizOn=false, caseDown=false;
 
 
 Undo undo;
@@ -131,6 +133,7 @@ void mousePressed() {
   if ( mouseX>=undoX && mouseX<=undoX+undoWidth && mouseY>=undoY && mouseY<=undoY+undoHeight ) {
     controlDown = true;
   }
+  //
 }//end of mousePressed
 
 
