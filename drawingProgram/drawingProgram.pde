@@ -34,7 +34,7 @@ Undo undo;
 void setup() {
   fullScreen();
   background(backgroundColor);
-  population();
+  );
   //
   //canvas
   
@@ -75,11 +75,11 @@ void draw() {
   undoButton();
   redoButton();
   //the lines
-  stroke(blackInk);
-  if (mousePressed)
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  stroke(reset);
   //
+  if (ciz == true && mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
+    fill(blackInk);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+  }
   //
   if ( controlDown == true) {
     undoButton();
@@ -131,6 +131,14 @@ void mousePressed() {
     }
   }
   //
+  //
+  if ( mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
+    if (ciz == false) {
+      ciz = true;
+    } else {
+      ciz = false;
+  //
+  //
   if ( mouseX>=undoX && mouseX<=undoX+undoWidth && mouseY>=undoY && mouseY<=undoY+undoHeight ) {
     controlDown = true;
   }
@@ -141,7 +149,7 @@ void mousePressed() {
 
 
 //the confusing part 
-class Undo {
+  class Undo {
   // Number ss taken
   int undoSteps=0, redoSteps=0;  
   CircImgCollection images;
