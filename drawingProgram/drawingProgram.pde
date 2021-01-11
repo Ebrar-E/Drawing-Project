@@ -34,7 +34,7 @@ Undo undo;
 void setup() {
   fullScreen();
   background(backgroundColor);
-  );
+  population();
   //
   //canvas
   
