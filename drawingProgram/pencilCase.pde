@@ -51,14 +51,14 @@ void caseDownInfo() {
 
 
 void caseDown() {
-  if  (dropMenu == true && mouseX>caseX && mouseX<caseX+caseWidth && mouseY>caseY && mouseY<caseDownY+caseDownHeight) {
+  if  (dropMenu1 == true && mouseX>caseX && mouseX<caseX+caseWidth && mouseY>caseY && mouseY<caseDownY+caseDownHeight) {
     stroke (buttonColor2);
     fill (buttonColor2);
     rect(caseDownX, caseDownY, caseDownWidth, caseDownHeight);
     stroke (reset);
     fill(reset);
     caseDownInfo();
-  } else if (dropMenu == true) {
+  } else if (dropMenu1 == true) {
     strokeWeight(4);
     stroke (buttonHoverOver2);
     fill (buttonHoverOver2);

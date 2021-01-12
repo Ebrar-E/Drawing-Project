@@ -3,6 +3,11 @@
 //color set
 color backgroundColor=#0B032D, textColor=#FFFFFF, reset=#FFFFFF, quitButColor=#F2161D, blackInk=#000000;
 color quitButHoverOver=#D30F15, buttonColor=#843B62, buttonHoverOver=#621940, strokeColor=#F67E7D, buttonColor2=#FFB997, buttonHoverOver2=#F67E7D;
+//
+//color palette
+color lblue=#74B3CE, teal=#508991, lgreen=#004346, dblue=#172A3A;
+color inde=#4E5166, lgray=#7C90A0, grullo=#B5AA9D, ashG=#B9B7A7;
+color cadBlue=#7DB1B5, sage=#A8AE84, vegasG=#D0C176, yelCrayola=#E7C373;
 //canvas
 float canvasX, canvasY, canvasWidth, canvasHeight;
 //quit button
@@ -21,13 +26,26 @@ float undoX, undoY, undoWidth, undoHeight;
 float redoX, redoY, redoWidth, redoHeight;
 //case down
 float caseDownX, caseDownY, caseDownWidth, caseDownHeight;
+//color down
+float colorDownX, colorDownY, colorDownWidth, colorDownHeight;
+//color palettes
+float colorB1X, colorB1Y, colorB2X, colorB2Y, colorB3X, colorB3Y, colorB4X, colorB4Y;
+float colorB5X, colorB5Y, colorB6X, colorB6Y, colorB7X, colorB7Y, colorB8X, colorB8Y;
+float colorB9X, colorB9Y, colorB10X, colorB10Y, colorB11X, colorB11Y, colorB12X, colorB12Y;
+//
+float strokeThickness;
+//
 
 //
 //the booleans
 boolean controlDown = false;
 boolean shiftDown = false;
 //
-boolean sil=false, silOn=false, ciz=false, cizOn=false, caseDown=false, dropMenu=false;
+boolean sil=false, silOn=false, ciz=false, cizOn=false, caseDown=false, dropMenu1=false, dropMenu2=false;
+//color set
+boolean lblueInk, tealInk, lgreenInk, dblueInk;
+boolean indeInk, lgrayInk, grulloInk, ashGlInk;
+boolean cadBlueInk, sageInk, vegasGInk, yelCrayolaInk;
 
 
 Undo undo;
@@ -77,8 +95,17 @@ void draw() {
   undoButton();
   redoButton();
   caseDown();
+  colorDown();
   //the lines
   //
+  if (ciz == true) {
+    fill(blackInk);
+   
+strokeWeight(strokeThickness);
+
+    stroke(blackInk);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+  }
   //
   if ( controlDown == true) {
     undoButton();
@@ -131,9 +158,15 @@ void mousePressed() {
   }
   //
   if (mouseX>caseX && mouseX<caseX+caseWidth && mouseY>caseY && mouseY<caseY+caseHeight) {
-    dropMenu = true;
+    dropMenu1 = true;
   } else {
-    dropMenu = false;
+    dropMenu1 = false;
+  }
+  //
+  if (mouseX>paletteX && mouseX<paletteX+paletteWidth && mouseY>paletteY && mouseY<paletteY+paletteHeight) {
+    dropMenu2 = true;
+  } else {
+    dropMenu2 = false;
   }
   //
   if ( mouseX>=undoX && mouseX<=undoX+undoWidth && mouseY>=undoY && mouseY<=undoY+undoHeight ) {
