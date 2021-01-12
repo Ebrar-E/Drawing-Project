@@ -19,13 +19,15 @@ float clearX, clearY, clearWidth, clearHeight;
 float undoX, undoY, undoWidth, undoHeight;
 //redo
 float redoX, redoY, redoWidth, redoHeight;
+//case down
+float caseDownX, caseDownY, caseDownWidth, caseDownHeight;
 
 //
 //the booleans
 boolean controlDown = false;
 boolean shiftDown = false;
 //
-boolean sil=false, silOn=false, ciz=false, cizOn=false, caseDown=false;
+boolean sil=false, silOn=false, ciz=false, cizOn=false, caseDown=false, dropMenu=false;
 
 
 Undo undo;
@@ -54,6 +56,8 @@ void setup() {
   rect(undoX, undoY, undoWidth, undoHeight);
   //redo
   rect(redoX, redoY, redoWidth, redoHeight);
+  //case down
+  rect(caseDownX, caseDownY, caseDownWidth, caseDownHeight);
   //
   //
   undo = new Undo(10);
@@ -74,12 +78,9 @@ void draw() {
   clearButton();
   undoButton();
   redoButton();
+  caseDown();
   //the lines
   //
-  if (ciz == true && mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
-    fill(blackInk);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  }
   //
   if ( controlDown == true) {
     undoButton();
@@ -131,13 +132,11 @@ void mousePressed() {
     }
   }
   //
-  //
-  if ( mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
-    if (ciz == false) {
-      ciz = true;
-    } else {
-      ciz = false;
-  //
+  if (mouseX>caseX && mouseX<caseX+caseWidth && mouseY>caseY && mouseY<caseY+caseHeight) {
+    dropMenu = true;
+  } else {
+    dropMenu = false;
+  }
   //
   if ( mouseX>=undoX && mouseX<=undoX+undoWidth && mouseY>=undoY && mouseY<=undoY+undoHeight ) {
     controlDown = true;

@@ -39,4 +39,9 @@ void population() {
   redoY = height*2/20;
   redoWidth = width*1/30;
   redoHeight = height*1.5/30;
+  //case down
+  caseDownX = width*25.5/30;
+  caseDownY = height*2/20;;
+  caseDownWidth = width*4/30;
+  caseDownHeight = height*2/30;
 }//end of population

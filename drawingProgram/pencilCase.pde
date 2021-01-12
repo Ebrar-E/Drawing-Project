@@ -12,7 +12,7 @@ void caseButtonInfo() {
 }//end of caseButtonInfo
 
 
-  
+
 
 
 void caseButton() {
@@ -23,7 +23,7 @@ void caseButton() {
     stroke (reset);
     fill(reset);
     caseButtonInfo();
-  } else  {
+  } else {
     strokeWeight(4);
     stroke (buttonHoverOver);
     fill (buttonHoverOver);
@@ -33,3 +33,38 @@ void caseButton() {
     caseButtonInfo();
   }
 }//end of caseButton
+
+
+
+void caseDownInfo() {
+  String caseDownText="Pencil Case";
+  PFont caseDownFont;
+  caseDownFont = createFont ("Gabriola", 60);
+  //
+  fill(textColor);
+  textAlign(CENTER, CENTER);
+  textFont(caseDownFont, 40);
+  //
+  text(caseDownText, caseDownX, caseDownY, caseDownWidth, caseDownHeight);
+  fill(reset);
+}//end of caseDownInfo
+
+
+void caseDown() {
+  if  (dropMenu == true && mouseX>caseX && mouseX<caseX+caseWidth && mouseY>caseY+caseHeight && mouseY<(caseY+caseHeight)+caseHeight) {
+    stroke (buttonColor2);
+    fill (buttonColor2);
+    rect(caseDownX, caseDownY+caseDownHeight, caseDownWidth, caseDownHeight);
+    stroke (reset);
+    fill(reset);
+    caseDownInfo();
+  } else if (dropMenu == true) {
+    strokeWeight(4);
+    stroke (buttonHoverOver2);
+    fill (buttonHoverOver2);
+    rect(caseDownX, caseDownY+caseDownHeight, caseDownWidth, caseDownHeight);
+    stroke (reset);
+    fill(reset);
+    caseDownInfo();
+  }
+}//end of caseDown 
