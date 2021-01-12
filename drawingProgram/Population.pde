@@ -52,8 +52,9 @@ void population() {
   //
   //color set
   //1
-  colorB1X = width*3/10;
-  colorB1Y = height*4/10;
+  colorB1X = width*2/50;
+  colorB1Y = height*11/50;
+  /*
   //2
   colorB2X = ;
   colorB2Y = ;
@@ -87,7 +88,8 @@ void population() {
   //12
   colorB12X = ;
   colorB12Y = ;
+  */
   //
-  colorBWidth = 40;
-  colorBHeight = 40;
+  colorBWidth = width*1/50;
+  colorBHeight = height*1/30;
 }//end of population

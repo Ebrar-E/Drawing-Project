@@ -34,10 +34,34 @@ void paletteButton() {
 
 
 
+
+void colorDown() {
+  if  (dropMenu2 == true && mouseX>paletteX && mouseX<paletteX+paletteWidth && mouseY>paletteY && mouseY<colorDownY+colorDownHeight) {
+    stroke (buttonColor2);
+    fill (buttonColor2);
+    rect(colorDownX, colorDownY, colorDownWidth, colorDownHeight);
+    stroke (reset);
+    fill(reset);
+    colorboxes();
+  } else if (dropMenu2 == true) {
+    strokeWeight(4);
+    stroke (buttonHoverOver2);
+    fill (buttonHoverOver2);
+    rect(colorDownX, colorDownY, colorDownWidth, colorDownHeight);
+    stroke (reset);
+    fill(reset);
+    colorboxes();
+  }
+}//end of colorDown
+
+
+
+
 void colorboxes() {
   //1
   fill(yelCrayola);
   rect(colorB1X, colorB1Y, colorBWidth, colorBHeight);
+  /*
   //2
   fill(vegasG);
   rect(colorB2X, colorB2Y, colorBWidth, colorBHeight);
@@ -73,12 +97,14 @@ void colorboxes() {
   //12
   fill(jet);
   rect(colorB12X, colorB12Y, colorBWidth, colorBHeight);
+  */
   //
   //
   //1
   if (yelCrayolaInk == true) {
     ink = yelCrayola;
   }
+  /*
   //2
   if (vegasGInk == true) {
     ink = vegasG;
@@ -123,23 +149,5 @@ void colorboxes() {
   if (jetInk == true) {
     ink = jet;
   }
+  */
 }//end of color boxes
-
-
-
-void colorDown() {
-  if  (dropMenu2 == true && mouseX>paletteX && mouseX<paletteX+paletteWidth && mouseY>paletteY && mouseY<colorDownY+colorDownHeight) {
-    stroke (buttonColor2);
-    fill (buttonColor2);
-    rect(colorDownX, colorDownY, colorDownWidth, colorDownHeight);
-    stroke (reset);
-    fill(reset);
-  } else if (dropMenu2 == true) {
-    strokeWeight(4);
-    stroke (buttonHoverOver2);
-    fill (buttonHoverOver2);
-    rect(colorDownX, colorDownY, colorDownWidth, colorDownHeight);
-    stroke (reset);
-    fill(reset);
-  }
-}//end of colorDown
