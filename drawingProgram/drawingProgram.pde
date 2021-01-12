@@ -34,7 +34,7 @@ float colorB5X, colorB5Y, colorB6X, colorB6Y, colorB7X, colorB7Y, colorB8X, colo
 float colorB9X, colorB9Y, colorB10X, colorB10Y, colorB11X, colorB11Y, colorB12X, colorB12Y;
 float colorBWidth, colorBHeight;
 //
-float strokeThickness;
+float strokeThickness, drawingDiameter;
 //
 
 //
@@ -173,6 +173,19 @@ void mousePressed() {
   if ( mouseX>=undoX && mouseX<=undoX+undoWidth && mouseY>=undoY && mouseY<=undoY+undoHeight ) {
     controlDown = true;
   }
+  //
+  //
+  fill(reset);
+  if ( mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
+    if (ciz == false) {
+     ciz = true;
+    } else {
+      ciz = false;
+    }
+    drawingDiameter = width*50/100;
+  }
+  //
+  colorBPressed();
   //
 }//end of mousePressed
 
