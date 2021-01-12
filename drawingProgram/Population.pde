@@ -49,4 +49,45 @@ void population() {
   colorDownY = height*4/20;;
   colorDownWidth = width*4/30;
   colorDownHeight = height*6/30;
+  //
+  //color set
+  //1
+  colorB1X = width*3/10;
+  colorB1Y = height*4/10;
+  //2
+  colorB2X = ;
+  colorB2Y = ;
+  //3
+  colorB3X = ;
+  colorB3Y = ;
+  //4
+  colorB4X = ;
+  colorB4Y = ;
+  //5
+  colorB5X = ;
+  colorB5Y = ;
+  //6
+  colorB6X = ;
+  colorB6Y = ;
+  //7
+  colorB7X = ;
+  colorB7Y = ;
+  //8
+  colorB8X = ;
+  colorB8Y = ;
+  //9
+  colorB9X = ;
+  colorB9Y = ;
+  //10
+  colorB10X = ;
+  colorB10Y = ;
+  //11
+  colorB11X = ;
+  colorB11Y = ;
+  //12
+  colorB12X = ;
+  colorB12Y = ;
+  //
+  colorBWidth = 40;
+  colorBHeight = 40;
 }//end of population
