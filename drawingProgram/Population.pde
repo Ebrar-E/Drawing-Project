@@ -54,41 +54,39 @@ void population() {
   //1
   colorB1X = width*2/50;
   colorB1Y = height*11/50;
-  /*
   //2
-  colorB2X = ;
-  colorB2Y = ;
+  colorB2X = width*3.7/50;
+  colorB2Y = height*11/50;
   //3
-  colorB3X = ;
-  colorB3Y = ;
+  colorB3X = width*5.3/50;
+  colorB3Y = height*11/50;
   //4
-  colorB4X = ;
-  colorB4Y = ;
+  colorB4X = width*7/50;
+  colorB4Y = height*11/50;
   //5
-  colorB5X = ;
-  colorB5Y = ;
+  colorB5X = width*2/50;
+  colorB5Y = height*14.3/50;
   //6
-  colorB6X = ;
-  colorB6Y = ;
+  colorB6X = width*3.7/50;
+  colorB6Y = height*14.3/50;
   //7
-  colorB7X = ;
-  colorB7Y = ;
+  colorB7X = width*5.3/50;
+  colorB7Y = height*14.3/50;
   //8
-  colorB8X = ;
-  colorB8Y = ;
+  colorB8X = width*7/50;
+  colorB8Y = height*14.3/50;
   //9
-  colorB9X = ;
-  colorB9Y = ;
+  colorB9X = width*2/50;
+  colorB9Y = height*17.5/50;
   //10
-  colorB10X = ;
-  colorB10Y = ;
+  colorB10X = width*3.7/50;
+  colorB10Y = height*17.5/50;
   //11
-  colorB11X = ;
-  colorB11Y = ;
+  colorB11X = width*5.3/50;
+  colorB11Y = height*17.5/50;
   //12
-  colorB12X = ;
-  colorB12Y = ;
-  */
+  colorB12X = width*7/50;
+  colorB12Y = height*17.5/50;
   //
   colorBWidth = width*1/50;
   colorBHeight = height*1/30;

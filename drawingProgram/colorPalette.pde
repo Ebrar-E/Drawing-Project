@@ -61,7 +61,6 @@ void colorboxes() {
   //1
   fill(yelCrayola);
   rect(colorB1X, colorB1Y, colorBWidth, colorBHeight);
-  /*
   //2
    fill(vegasG);
    rect(colorB2X, colorB2Y, colorBWidth, colorBHeight);
@@ -97,14 +96,12 @@ void colorboxes() {
    //12
    fill(jet);
    rect(colorB12X, colorB12Y, colorBWidth, colorBHeight);
-   */
   //
   //
   //1
   if (yelCrayolaInk == true) {
     ink = yelCrayola;
   }
-  /*
   //2
    if (vegasGInk == true) {
    ink = vegasG;
@@ -149,7 +146,6 @@ void colorboxes() {
    if (jetInk == true) {
    ink = jet;
    }
-   */
 }//end of color boxes
 
 
