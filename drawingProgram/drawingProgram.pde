@@ -56,8 +56,6 @@ void setup() {
   rect(undoX, undoY, undoWidth, undoHeight);
   //redo
   rect(redoX, redoY, redoWidth, redoHeight);
-  //case down
-  rect(caseDownX, caseDownY, caseDownWidth, caseDownHeight);
   //
   //
   undo = new Undo(10);

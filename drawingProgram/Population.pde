@@ -41,7 +41,7 @@ void population() {
   redoHeight = height*1.5/30;
   //case down
   caseDownX = width*25.5/30;
-  caseDownY = height*2/20;;
+  caseDownY = height*4/20;;
   caseDownWidth = width*4/30;
-  caseDownHeight = height*2/30;
+  caseDownHeight = height*4/30;
 }//end of population

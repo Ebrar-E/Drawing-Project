@@ -37,7 +37,7 @@ void caseButton() {
 
 
 void caseDownInfo() {
-  String caseDownText="Pencil Case";
+  String caseDownText="";
   PFont caseDownFont;
   caseDownFont = createFont ("Gabriola", 60);
   //
@@ -51,10 +51,10 @@ void caseDownInfo() {
 
 
 void caseDown() {
-  if  (dropMenu == true && mouseX>caseX && mouseX<caseX+caseWidth && mouseY>caseY+caseHeight && mouseY<(caseY+caseHeight)+caseHeight) {
+  if  (dropMenu == true && mouseX>caseX && mouseX<caseX+caseWidth && mouseY>caseY && mouseY<caseDownY+caseDownHeight) {
     stroke (buttonColor2);
     fill (buttonColor2);
-    rect(caseDownX, caseDownY+caseDownHeight, caseDownWidth, caseDownHeight);
+    rect(caseDownX, caseDownY, caseDownWidth, caseDownHeight);
     stroke (reset);
     fill(reset);
     caseDownInfo();
@@ -62,9 +62,17 @@ void caseDown() {
     strokeWeight(4);
     stroke (buttonHoverOver2);
     fill (buttonHoverOver2);
-    rect(caseDownX, caseDownY+caseDownHeight, caseDownWidth, caseDownHeight);
+    rect(caseDownX, caseDownY, caseDownWidth, caseDownHeight);
     stroke (reset);
     fill(reset);
     caseDownInfo();
   }
 }//end of caseDown 
+
+void pressed() {
+  if (mouseX>X && mouseX<caseX+caseWidth && mouseY>caseY && mouseY<caseY+caseHeight) {
+    caseDown = true;
+  } else {
+    caseDown = false;
+  }
+}//end of pressed
