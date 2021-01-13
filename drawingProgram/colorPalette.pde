@@ -42,7 +42,7 @@ void colorDown() {
     rect(colorDownX, colorDownY, colorDownWidth, colorDownHeight);
     stroke (reset);
     fill(reset);
-    colorboxes();
+    colorBoxes();
   } else if (dropMenu2 == true) {
     strokeWeight(4);
     stroke (buttonHoverOver2);
@@ -50,14 +50,12 @@ void colorDown() {
     rect(colorDownX, colorDownY, colorDownWidth, colorDownHeight);
     stroke (reset);
     fill(reset);
-    colorboxes();
+    colorBoxes();
   }
 }//end of colorDown
 
 
-
-
-void colorboxes() {
+void colorBoxes() {
   //1
   fill(yelCrayola);
   rect(colorB1X, colorB1Y, colorBWidth, colorBHeight);
@@ -103,50 +101,53 @@ void colorboxes() {
     ink = yelCrayola;
   }
   //2
-   if (vegasGInk == true) {
-   ink = vegasG;
-   }
-   //3
-   if (sageInk == true) {
-   ink = sage;
-   }
-   //4
-   if (cadBlueInk == true) {
-   ink = cadBlue;
-   }
-   //5
-   if (mMintInk == true) {
-   ink = mMint;
-   }
-   //6
-   if (celandonInk == true) {
-   ink = celandon;
-   }
-   //7
-   if (fgreenInk == true) {
-   ink = fgreen;
-   }
-   //8
-   if (dgreenInk == true) {
-   ink = dgreen;
-   }
-   //9
-   if (ashGlInk == true) {
-   ink = ashG;
-   }
-   //10
-   if (grulloInk == true) {
-   ink = grullo;
-   }
-   //11
-   if (lgrayInk == true) {
-   ink = lgray;
-   }
-   //12
-   if (jetInk == true) {
-   ink = jet;
-   }
-}//end of color boxes
+  if (vegasGInk == true) {
+    ink = vegasG;
+  }
+  //3
+  if (sageInk == true) {
+    ink = sage;
+  }
+  //4
+  if (cadBlueInk == true) {
+    ink = cadBlue;
+  }
+  //5
+  if (mMintInk == true) {
+    ink = mMint;
+  }
+  //6
+  if (celandonInk == true) {
+    ink = celandon;
+  }
+  //7
+  if (fgreenInk == true) {
+    ink = fgreen;
+  }
+  //8
+  if (dgreenInk == true) {
+    ink = dgreen;
+  }
+  //9
+  if (ashGlInk == true) {
+    ink = ashG;
+  }
+  //10
+  if (grulloInk == true) {
+    ink = grullo;
+  }
+  //11
+  if (lgrayInk == true) {
+    ink = lgray;
+  }
+  //12
+  if (jetInk == true) {
+    ink = jet;
+  }
+}//end of colorBDraw
+
+
+
 
 
 void colorBPressed() {
@@ -330,5 +331,4 @@ void colorBPressed() {
     lgrayInk=false;
     jetInk=true;
   }
-  
 }//end of colorBPressed

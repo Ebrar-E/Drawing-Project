@@ -1,7 +1,7 @@
 //Global Variables
 //
 //color set
-color backgroundColor=#0B032D, textColor=#FFFFFF, reset=#FFFFFF, quitButColor=#F2161D, ink;
+color ink, backgroundColor=#0B032D, textColor=#FFFFFF, reset=#FFFFFF, quitButColor=#F2161D;
 color quitButHoverOver=#D30F15, buttonColor=#843B62, buttonHoverOver=#621940, strokeColor=#F67E7D, buttonColor2=#FFB997, buttonHoverOver2=#F67E7D;
 //
 //color palette
@@ -42,7 +42,7 @@ float strokeThickness, drawingDiameter;
 boolean controlDown = false;
 boolean shiftDown = false;
 //
-boolean sil=false, silOn=false, ciz=false, cizOn=false, caseDown=false, dropMenu1=false, dropMenu2=false;
+boolean sil=false, ciz=false, caseDown=false, dropMenu1=false, dropMenu2=false;
 //color set
 boolean cadBlueInk, sageInk, vegasGInk, yelCrayolaInk;
 boolean dgreenInk, fgreenInk, celandonInk, mMintInk;
