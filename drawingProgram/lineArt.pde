@@ -22,7 +22,6 @@ void artButtons() {
     stroke (reset);
     fill(reset);
     lineArtInfo();
-    artDown();
   } else {
     strokeWeight(4);
     stroke (buttonHoverOver);
@@ -31,7 +30,6 @@ void artButtons() {
     stroke (reset);
     fill(reset);
     lineArtInfo();
-    artDown();
   }
   //2
   if (mouseX>artX && mouseX<artX+artWidth  && mouseY>artY && mouseY<artY+artHeight) {
@@ -41,9 +39,6 @@ void artButtons() {
     stroke (reset);
     fill(reset);
     lineArtInfo();
-    artDown();
-    artDown2();
-    artDown3();
   } else {
     strokeWeight(4);
     stroke (buttonHoverOver);
@@ -52,9 +47,6 @@ void artButtons() {
     stroke (reset);
     fill(reset);
     lineArtInfo();
-    artDown();
-    artDown2();
-    artDown3();
   }
 }//end of artButton
 

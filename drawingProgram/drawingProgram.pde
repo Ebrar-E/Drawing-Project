@@ -113,6 +113,7 @@ void draw() {
   paletteButton();
   caseButton();
   artButtons();
+  inkPopulation();
   clearButton();
   undoButton();
   redoButton();
@@ -196,6 +197,10 @@ void mousePressed() {
   //
   colorBPressed();
   artPressed();
+  //
+  artDown();
+  artDown2();
+  artDown3();
   //
 }//end of mousePressed
 

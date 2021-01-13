@@ -60,45 +60,49 @@ void colorDown() {
 void colorBoxes() {
   //1
   fill(yelCrayola);
-  rect(colorB1X, colorB1Y, colorBWidth2, colorBHeight2);
+  rect(colorB1X, colorB1Y, colorBWidth, colorBHeight);
   //2
-   fill(vegasG);
-   rect(colorB2X, colorB2Y, colorBWidth, colorBHeight);
-   //3
-   fill(sage);
-   rect(colorB3X, colorB3Y, colorBWidth, colorBHeight);
-   //4
-   fill(cadBlue);
-   rect(colorB4X, colorB4Y, colorBWidth, colorBHeight);
-   //
-   //5
-   fill(mMint);
-   rect(colorB5X, colorB5Y, colorBWidth, colorBHeight);
-   //6
-   fill(celandon);
-   rect(colorB6X, colorB6Y, colorBWidth, colorBHeight);
-   //7
-   fill(fgreen);
-   rect(colorB7X, colorB7Y, colorBWidth, colorBHeight);
-   //8
-   fill(dgreen);
-   rect(colorB8X, colorB8Y, colorBWidth, colorBHeight);
-   //
-   //9
-   fill(ashG);
-   rect(colorB9X, colorB9Y, colorBWidth, colorBHeight);
-   //10
-   fill(grullo);
-   rect(colorB10X, colorB10Y, colorBWidth, colorBHeight);
-   //11
-   fill(lgray);
-   rect(colorB11X, colorB11Y, colorBWidth, colorBHeight);
-   //12
-   fill(jet);
-   rect(colorB12X, colorB12Y, colorBWidth, colorBHeight);
-   fill(reset);
+  fill(vegasG);
+  rect(colorB2X, colorB2Y, colorBWidth, colorBHeight);
+  //3
+  fill(sage);
+  rect(colorB3X, colorB3Y, colorBWidth, colorBHeight);
+  //4
+  fill(cadBlue);
+  rect(colorB4X, colorB4Y, colorBWidth, colorBHeight);
+  //
+  //5
+  fill(mMint);
+  rect(colorB5X, colorB5Y, colorBWidth, colorBHeight);
+  //6
+  fill(celandon);
+  rect(colorB6X, colorB6Y, colorBWidth, colorBHeight);
+  //7
+  fill(fgreen);
+  rect(colorB7X, colorB7Y, colorBWidth, colorBHeight);
+  //8
+  fill(dgreen);
+  rect(colorB8X, colorB8Y, colorBWidth, colorBHeight);
+  //
+  //9
+  fill(ashG);
+  rect(colorB9X, colorB9Y, colorBWidth, colorBHeight);
+  //10
+  fill(grullo);
+  rect(colorB10X, colorB10Y, colorBWidth, colorBHeight);
+  //11
+  fill(lgray);
+  rect(colorB11X, colorB11Y, colorBWidth, colorBHeight);
+  //12
+  fill(jet);
+  rect(colorB12X, colorB12Y, colorBWidth, colorBHeight);
+  fill(reset);
   //
   //
+}//end of colorBDraw
+
+
+void inkPopulation() {
   //1
   if (yelCrayolaInk == true) {
     ink = yelCrayola;
@@ -147,10 +151,7 @@ void colorBoxes() {
   if (jetInk == true) {
     ink = jet;
   }
-}//end of colorBDraw
-
-
-
+}//end of inkPopulation
 
 
 void colorBPressed() {
