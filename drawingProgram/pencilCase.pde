@@ -50,6 +50,21 @@ void caseDownInfo() {
 }//end of caseDownInfo
 
 
+void caseDownInfo2() {
+  String caseDownText2="Eraser";
+  PFont caseDownFont;
+  caseDownFont = createFont ("Verdana", 20);
+  //
+  fill(textColor);
+  textAlign(CENTER, CENTER);
+  textFont(caseDownFont, 20);
+  //
+  text(caseDownText2, caseDownX2, caseDownY2, caseDownWidth2, caseDownHeight2);
+  fill(reset);
+}//end of caseDownInfo
+  
+
+
 void caseDown() {
   if  (dropMenu1 == true && mouseX>caseX && mouseX<caseX+caseWidth && mouseY>caseY && mouseY<caseDownY+caseDownHeight) {
     stroke (buttonColor2);
@@ -66,5 +81,25 @@ void caseDown() {
     stroke (reset);
     fill(reset);
     caseDownInfo();
+  }
+}//end of caseDown 
+
+
+void caseDown2() {
+  if  (dropMenu1 == true && mouseX>caseX && mouseX<caseX+caseWidth && mouseY>caseY && mouseY<caseDownY+caseDownHeight) {
+    stroke (buttonColor2);
+    fill (buttonColor2);
+    rect(caseDownX2, caseDownY2, caseDownWidth2, caseDownHeight2);
+    stroke (reset);
+    fill(reset);
+    caseDownInfo2();
+  } else if (dropMenu1 == true) {
+    strokeWeight(4);
+    stroke (buttonHoverOver2);
+    fill (buttonHoverOver2);
+    rect(caseDownX2, caseDownY2, caseDownWidth2, caseDownHeight2);
+    stroke (reset);
+    fill(reset);
+    caseDownInfo2();
   }
 }//end of caseDown 

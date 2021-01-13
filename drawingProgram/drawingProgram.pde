@@ -28,6 +28,7 @@ float undoX, undoY, undoWidth, undoHeight;
 float redoX, redoY, redoWidth, redoHeight;
 //case down
 float caseDownX, caseDownY, caseDownWidth, caseDownHeight;
+float caseDownX2, caseDownY2, caseDownWidth2, caseDownHeight2;
 //color down
 float colorDownX, colorDownY, colorDownWidth, colorDownHeight;
 //art down
@@ -47,12 +48,13 @@ float picX3, picY3, picWidth3, picHeight3, picWidthRatio3, picHeightRatio3;
 float strokeThickness, drawingDiameter;
 //
 
+
 //
 //the booleans
 boolean controlDown = false;
 boolean shiftDown = false;
 //
-boolean sil=false, ciz=false, caseDown=false, dropMenu1=false, dropMenu2=false, dropMenu3=false, art1=false, art2=false, art3=false;
+boolean ciz=false, cizca=false, caseDown=false, dropMenu1=false, dropMenu2=false, dropMenu3=false, art1=false, art2=false, art3=false;
 //color set
 boolean cadBlueInk, sageInk, vegasGInk, yelCrayolaInk;
 boolean dgreenInk, fgreenInk, celandonInk, mMintInk;
@@ -112,6 +114,7 @@ void draw() {
   undoButton();
   redoButton();
   caseDown();
+  caseDown2();
   colorDown();
   //
   if ( controlDown == true) {
