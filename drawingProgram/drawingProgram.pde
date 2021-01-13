@@ -197,6 +197,7 @@ void mousePressed() {
   //
   colorBPressed();
   artPressed();
+  clearPressed();
   //
   artDown();
   artDown2();

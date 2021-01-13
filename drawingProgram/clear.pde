@@ -31,3 +31,14 @@ void clearButton() {
     clearButInfo();
   }
 }//end of clearButton
+
+
+void clearPressed() {
+  if (mouseX>clearX && mouseX<clearX+clearWidth  && mouseY>clearY && mouseY<clearY+clearHeight) {
+    art1 = false;
+    art2 = false;
+    art3 = false;
+    rect(canvasX, canvasY, canvasWidth, canvasHeight);
+    ciz = false;
+  }
+}//end of clearPressed
