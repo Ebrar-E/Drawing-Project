@@ -110,6 +110,7 @@ void artDown() {
     artDownInfo();
   }
   if (art1 == true && art2 == false && art3 == false) image(pic1, picX, picY, picWidth, picHeight);
+  art1 = false;
 }//end of caseDown 
 
 void artDown2() {
@@ -131,6 +132,7 @@ void artDown2() {
     artDownInfo2();
   }
   if (art1 == false && art2 == true && art3 == false) image(pic2, picX2, picY2, picWidth2, picHeight2);
+  art2 = false;
 }//end of caseDown2
 
 void artDown3() {
@@ -152,6 +154,7 @@ void artDown3() {
     artDownInfo3();
   }
   if (art1 == false && art2 == false && art3 == true) image(pic3, picX3, picY3, picWidth3, picHeight3);
+  art3 =  false;
 }//end of caseDown2
 
 
