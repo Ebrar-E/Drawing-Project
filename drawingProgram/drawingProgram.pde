@@ -28,6 +28,8 @@ float redoX, redoY, redoWidth, redoHeight;
 float caseDownX, caseDownY, caseDownWidth, caseDownHeight;
 //color down
 float colorDownX, colorDownY, colorDownWidth, colorDownHeight;
+//art down
+float artDownX, artDownY, artDownWidth, artDownHeight;
 //color palettes
 float colorB1X, colorB1Y, colorB2X, colorB2Y, colorB3X, colorB3Y, colorB4X, colorB4Y;
 float colorB5X, colorB5Y, colorB6X, colorB6Y, colorB7X, colorB7Y, colorB8X, colorB8Y;
@@ -42,7 +44,7 @@ float strokeThickness, drawingDiameter;
 boolean controlDown = false;
 boolean shiftDown = false;
 //
-boolean sil=false, ciz=false, caseDown=false, dropMenu1=false, dropMenu2=false;
+boolean sil=false, ciz=false, caseDown=false, dropMenu1=false, dropMenu2=false, dropMenu3=false;
 //color set
 boolean cadBlueInk, sageInk, vegasGInk, yelCrayolaInk;
 boolean dgreenInk, fgreenInk, celandonInk, mMintInk;
@@ -168,6 +170,12 @@ void mousePressed() {
     dropMenu2 = true;
   } else {
     dropMenu2 = false;
+  }
+  //
+  if (mouseX>artX && mouseX<artX+artWidth && mouseY>artY && mouseY<artY+artHeight) {
+    dropMenu3 = true;
+  } else {
+    dropMenu3 = false;
   }
   //
   if ( mouseX>=undoX && mouseX<=undoX+undoWidth && mouseY>=undoY && mouseY<=undoY+undoHeight ) {

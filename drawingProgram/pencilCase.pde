@@ -37,13 +37,13 @@ void caseButton() {
 
 
 void caseDownInfo() {
-  String caseDownText="";
+  String caseDownText="Pencil";
   PFont caseDownFont;
-  caseDownFont = createFont ("Gabriola", 60);
+  caseDownFont = createFont ("Verdana", 20);
   //
   fill(textColor);
   textAlign(CENTER, CENTER);
-  textFont(caseDownFont, 40);
+  textFont(caseDownFont, 20);
   //
   text(caseDownText, caseDownX, caseDownY, caseDownWidth, caseDownHeight);
   fill(reset);
