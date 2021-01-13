@@ -21,6 +21,7 @@ void paletteButton() {
     stroke (reset);
     fill(reset);
     paletteButtonInfo();
+    colorDown();
   } else {
     strokeWeight(4);
     stroke (buttonHoverOver);
@@ -29,6 +30,7 @@ void paletteButton() {
     stroke (reset);
     fill(reset);
     paletteButtonInfo();
+    colorDown();
   }
 }//end of paletteButton
 
@@ -58,7 +60,7 @@ void colorDown() {
 void colorBoxes() {
   //1
   fill(yelCrayola);
-  rect(colorB1X, colorB1Y, colorBWidth, colorBHeight);
+  rect(colorB1X, colorB1Y, colorBWidth2, colorBHeight2);
   //2
    fill(vegasG);
    rect(colorB2X, colorB2Y, colorBWidth, colorBHeight);
@@ -94,6 +96,7 @@ void colorBoxes() {
    //12
    fill(jet);
    rect(colorB12X, colorB12Y, colorBWidth, colorBHeight);
+   fill(reset);
   //
   //
   //1
@@ -151,8 +154,18 @@ void colorBoxes() {
 
 
 void colorBPressed() {
+  if ( mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
+    println("drawing surface");
+    if (ciz == false) {
+      ciz = true;
+    } else {
+      ciz = false;
+    }
+    drawingDiameter = width*1/100;
+  }
+  //
   //1
-  if ( mouseX>colorB1X  && mouseX<colorB1X+colorBWidth  && mouseY>colorB1Y && mouseY<colorB1Y+colorBHeight) {
+  if ( mouseX>colorB1X  && mouseX<colorB1X+colorBWidth2  && mouseY>colorB1Y && mouseY<colorB1Y+colorBHeight2) {
     yelCrayolaInk=true;
     vegasGInk=false;
     sageInk=false;
@@ -331,4 +344,5 @@ void colorBPressed() {
     lgrayInk=false;
     jetInk=true;
   }
+  //
 }//end of colorBPressed

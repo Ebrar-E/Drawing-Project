@@ -3,7 +3,8 @@
 //images
 PImage pic1, pic2, pic3;
 //color set
-color ink, backgroundColor=#0B032D, textColor=#FFFFFF, reset=#FFFFFF, quitButColor=#F2161D;
+color ink;
+color backgroundColor=#0B032D, textColor=#FFFFFF, reset=#FFFFFF, quitButColor=#F2161D;
 color quitButHoverOver=#D30F15, buttonColor=#843B62, buttonHoverOver=#621940, strokeColor=#F67E7D, buttonColor2=#FFB997, buttonHoverOver2=#F67E7D;
 //
 //color palette
@@ -40,12 +41,13 @@ float colorB1X, colorB1Y, colorB2X, colorB2Y, colorB3X, colorB3Y, colorB4X, colo
 float colorB5X, colorB5Y, colorB6X, colorB6Y, colorB7X, colorB7Y, colorB8X, colorB8Y;
 float colorB9X, colorB9Y, colorB10X, colorB10Y, colorB11X, colorB11Y, colorB12X, colorB12Y;
 float colorBWidth, colorBHeight;
+float colorBWidth2, colorBHeight2;
 //pic
 float picX, picY, picWidth, picHeight, picWidthRatio, picHeightRatio;
 float picX2, picY2, picWidth2, picHeight2, picWidthRatio2, picHeightRatio2;
 float picX3, picY3, picWidth3, picHeight3, picWidthRatio3, picHeightRatio3;
 //
-float strokeThickness, drawingDiameter;
+float strokeThicess, drawingDiameter;
 //
 
 
@@ -102,8 +104,9 @@ void mouseReleased() {
 void draw() {
   //
   //the lines
-  if (ciz == true && mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
-    stroke(jet);
+  if (ciz == true) {
+    fill(ink);
+    stroke(ink);
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
   quitButton();
@@ -115,7 +118,6 @@ void draw() {
   redoButton();
   caseDown();
   caseDown2();
-  colorDown();
   //
   if ( controlDown == true) {
     undoButton();
@@ -190,14 +192,7 @@ void mousePressed() {
   }
   //
   //
-  if ( mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
-    println("drawing surface");
-    if (ciz == false) {
-      ciz = true;
-    } else {
-      ciz = false;
-    }
-  }
+  
   //
   colorBPressed();
   artPressed();

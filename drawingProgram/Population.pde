@@ -3,7 +3,7 @@ void population() {
   canvasX = width*2/10;
   canvasY = height*2/10;
   canvasWidth = width*5/8;
-  canvasHeight = height*5/8;
+  canvasHeight = height*5/8;;
   //quit
   quitButX = width*58/60; 
   quitButY = height*0/40;
@@ -41,12 +41,12 @@ void population() {
   redoHeight = height*1.5/30;
   //case down
   caseDownX = width*25.5/30;
-  caseDownY = height*4.5/20;;
+  caseDownY = height*4.5/20;
   caseDownWidth = width*4/30;
   caseDownHeight = height*1.5/30;
   //case down 2
   caseDownX2 = width*25.5/30;
-  caseDownY2 = height*6/20;;
+  caseDownY2 = height*6/20;
   caseDownWidth2 = width*4/30;
   caseDownHeight2 = height*1.5/30;
   //color down
@@ -59,6 +59,8 @@ void population() {
   //1
   colorB1X = width*2/50;
   colorB1Y = height*11/50;
+  colorBWidth2 = width*1/50;
+  colorBHeight = height*1/30;
   //2
   colorB2X = width*3.7/50;
   colorB2Y = height*11/50;
