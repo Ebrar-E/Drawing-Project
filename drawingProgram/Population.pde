@@ -92,10 +92,22 @@ void population() {
   colorBHeight = height*1/30;
   //
   //art down
-  artDownX = width*7/30;
+  //1
+  artDownX = width*8/30;
   artDownY = height*17/20;
   artDownWidth = width*2/30;
   artDownHeight = height*1/30;
+  //2
+  artDownX2 = width*10/30;
+  artDownY2 = height*18/20;
+  artDownWidth2 = width*2/30;
+  artDownHeight2 = height*1/30;
+  //3
+  artDownX3 = width*6/30;
+  artDownY3 = height*18/20;
+  artDownWidth3 = width*2/30;
+  artDownHeight3 = height*1/30;
+  //
   //arts
   pic1 = loadImage ("../Images/printable-coloring-tremendous-easy-pages-for-kids-picture-inspirations-slavyanka.jpg");
   pic2 = loadImage ("../Images/53c2fb74869cca8de0d09e001c878c11.jpg");
@@ -110,16 +122,18 @@ void population() {
   //2
   picWidthRatio2 = 1024.0/1024.0;
   picHeightRatio2 = 894.0/1024.0;
-  picX2 = width*10/25;
-  picY2 = height*5/20;
-  picWidth2 = width*1/20;
-  picHeight2 = height*1/20;
+  picX2 = width*5/25;
+  picY2 = height*4/20;
+  picWidth2 = width*3/5;
+  picHeight2 = height*3/5;
   //3
   picWidthRatio3 = 842.0/842.0;
   picHeightRatio3 = 595.0/595.0;
-  picX3 = width*10/25;
-  picY3 = height*5/20;
-  picWidth3 = width*1/20;
-  picHeight3 = height*1/20;
+  picX3 = width*8/25;
+  picY3 = height*6/20;
+  picWidth3 = width*2/5;
+  picHeight3 = height*2/5;
+  //
+
 
 }//end of population
