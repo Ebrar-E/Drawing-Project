@@ -21,6 +21,7 @@ void artButton() {
     stroke (reset);
     fill(reset);
     lineArtInfo();
+    artDown();
   } else {
     strokeWeight(4);
     stroke (buttonHoverOver);
@@ -29,6 +30,7 @@ void artButton() {
     stroke (reset);
     fill(reset);
     lineArtInfo();
+    artDown();
   }
 }//end of artButton
   

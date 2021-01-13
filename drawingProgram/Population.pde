@@ -92,8 +92,34 @@ void population() {
   colorBHeight = height*1/30;
   //
   //art down
-  artDownX = width*1/30;
+  artDownX = width*7/30;
   artDownY = height*17/20;
-  artDownWidth = width*4/30;
+  artDownWidth = width*2/30;
   artDownHeight = height*1/30;
+  //arts
+  pic1 = loadImage ("../Images/Monkey-Easy-Coloring-Pages.jpg");
+  pic2 = loadImage ("../Images/53c2fb74869cca8de0d09e001c878c11.jpg");
+  pic3 = loadImage ("../Images/printable-coloring-tremendous-easy-pages-for-kids-picture-inspirations-slavyanka.jpg");
+  //1
+  picWidthRatio = 719.0/719.0;
+  picHeightRatio = 700.0/700.0;
+  picX = width;
+  picY = height;
+  picWidth = width;
+  picHeight = height;
+  //2
+  picWidthRatio2 = 1024.0/1024.0;
+  picHeightRatio2 = 894.0/1024.0;
+  picX2 = width;
+  picY2 = height;
+  picWidth2 = width;
+  picHeight2 = height;
+  //3
+  picWidthRatio3 = 842.0/842.0;
+  picHeightRatio3 = 595.0/595.0;
+  picX3 = width;
+  picY3 = height;
+  picWidth3 = width;
+  picHeight3 = height;
+
 }//end of population

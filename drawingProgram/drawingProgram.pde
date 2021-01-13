@@ -1,5 +1,7 @@
 //Global Variables
 //
+//images
+PImage pic1, pic2, pic3;
 //color set
 color ink, backgroundColor=#0B032D, textColor=#FFFFFF, reset=#FFFFFF, quitButColor=#F2161D;
 color quitButHoverOver=#D30F15, buttonColor=#843B62, buttonHoverOver=#621940, strokeColor=#F67E7D, buttonColor2=#FFB997, buttonHoverOver2=#F67E7D;
@@ -35,6 +37,10 @@ float colorB1X, colorB1Y, colorB2X, colorB2Y, colorB3X, colorB3Y, colorB4X, colo
 float colorB5X, colorB5Y, colorB6X, colorB6Y, colorB7X, colorB7Y, colorB8X, colorB8Y;
 float colorB9X, colorB9Y, colorB10X, colorB10Y, colorB11X, colorB11Y, colorB12X, colorB12Y;
 float colorBWidth, colorBHeight;
+//pic
+float picX, picY, picWidth, picHeight, picWidthRatio, picHeightRatio;
+float picX2, picY2, picWidth2, picHeight2, picWidthRatio2, picHeightRatio2;
+float picX3, picY3, picWidth3, picHeight3, picWidthRatio3, picHeightRatio3;
 //
 float strokeThickness, drawingDiameter;
 //
@@ -44,7 +50,7 @@ float strokeThickness, drawingDiameter;
 boolean controlDown = false;
 boolean shiftDown = false;
 //
-boolean sil=false, ciz=false, caseDown=false, dropMenu1=false, dropMenu2=false, dropMenu3=false;
+boolean sil=false, ciz=false, caseDown=false, dropMenu1=false, dropMenu2=false, dropMenu3=false, art1=false, art2=false, art3=false;
 //color set
 boolean cadBlueInk, sageInk, vegasGInk, yelCrayolaInk;
 boolean dgreenInk, fgreenInk, celandonInk, mMintInk;
