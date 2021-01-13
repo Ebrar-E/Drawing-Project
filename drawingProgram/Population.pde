@@ -97,29 +97,29 @@ void population() {
   artDownWidth = width*2/30;
   artDownHeight = height*1/30;
   //arts
-  pic1 = loadImage ("../Images/Monkey-Easy-Coloring-Pages.jpg");
+  pic1 = loadImage ("../Images/printable-coloring-tremendous-easy-pages-for-kids-picture-inspirations-slavyanka.jpg");
   pic2 = loadImage ("../Images/53c2fb74869cca8de0d09e001c878c11.jpg");
-  pic3 = loadImage ("../Images/printable-coloring-tremendous-easy-pages-for-kids-picture-inspirations-slavyanka.jpg");
+  pic3 = loadImage ("../Images/Monkey-Easy-Coloring-Pages.jpg");
   //1
   picWidthRatio = 719.0/719.0;
   picHeightRatio = 700.0/700.0;
-  picX = width;
-  picY = height;
-  picWidth = width;
-  picHeight = height;
+  picX = width*10/25;
+  picY = height*5/20;
+  picWidth = width*1/20;
+  picHeight = height*1/20;
   //2
   picWidthRatio2 = 1024.0/1024.0;
   picHeightRatio2 = 894.0/1024.0;
-  picX2 = width;
-  picY2 = height;
-  picWidth2 = width;
-  picHeight2 = height;
+  picX2 = width*10/25;
+  picY2 = height*5/20;
+  picWidth2 = width*1/20;
+  picHeight2 = height*1/20;
   //3
   picWidthRatio3 = 842.0/842.0;
   picHeightRatio3 = 595.0/595.0;
-  picX3 = width;
-  picY3 = height;
-  picWidth3 = width;
-  picHeight3 = height;
+  picX3 = width*10/25;
+  picY3 = height*5/20;
+  picWidth3 = width*1/20;
+  picHeight3 = height*1/20;
 
 }//end of population

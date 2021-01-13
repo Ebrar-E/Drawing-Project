@@ -32,6 +32,8 @@ float caseDownX, caseDownY, caseDownWidth, caseDownHeight;
 float colorDownX, colorDownY, colorDownWidth, colorDownHeight;
 //art down
 float artDownX, artDownY, artDownWidth, artDownHeight;
+float artDownX2, artDownY2, artDownWidth2, artDownHeight2;
+float artDownX3, artDownY3, artDownWidth3, artDownHeight3;
 //color palettes
 float colorB1X, colorB1Y, colorB2X, colorB2Y, colorB3X, colorB3Y, colorB4X, colorB4Y;
 float colorB5X, colorB5Y, colorB6X, colorB6Y, colorB7X, colorB7Y, colorB8X, colorB8Y;
@@ -99,7 +101,7 @@ void draw() {
   quitButton();
   paletteButton();
   caseButton();
-  artButton();
+  artButtons();
   clearButton();
   undoButton();
   redoButton();
@@ -200,6 +202,7 @@ void mousePressed() {
   }
   //
   colorBPressed();
+  artPressed();
   //
 }//end of mousePressed
 
