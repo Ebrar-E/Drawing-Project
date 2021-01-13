@@ -98,6 +98,12 @@ void mouseReleased() {
 }
 
 void draw() {
+  //
+  //the lines
+  if (ciz == true && mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
+    stroke(jet);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+  }
   quitButton();
   paletteButton();
   caseButton();
@@ -107,16 +113,6 @@ void draw() {
   redoButton();
   caseDown();
   colorDown();
-  //the lines
-  //
-  if (ciz == true) {
-    fill(jet);
-   
-strokeWeight(strokeThickness);
-
-    stroke(jet);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  }
   //
   if ( controlDown == true) {
     undoButton();
@@ -191,14 +187,13 @@ void mousePressed() {
   }
   //
   //
-  fill(reset);
   if ( mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
+    println("drawing surface");
     if (ciz == false) {
-     ciz = true;
+      ciz = true;
     } else {
       ciz = false;
     }
-    drawingDiameter = width*50/100;
   }
   //
   colorBPressed();
