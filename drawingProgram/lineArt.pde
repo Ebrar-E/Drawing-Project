@@ -117,6 +117,7 @@ void artDown() {
     fill(reset);
     artDownInfo();
   }
+  if (art1 == true && art2 == false && art3 == false) image(pic1, picX, picY, picWidth, picHeight);
 }//end of caseDown 
 
 void artDown2() {

@@ -113,12 +113,12 @@ void population() {
   pic2 = loadImage ("../Images/53c2fb74869cca8de0d09e001c878c11.jpg");
   pic3 = loadImage ("../Images/Monkey-Easy-Coloring-Pages.jpg");
   //1
-  picWidthRatio = 719.0/719.0;
-  picHeightRatio = 700.0/700.0;
-  picX = width*10/25;
+  picWidthRatio = 1024.0/1024.0;
+  picHeightRatio = 894.0/1024.0;
+  picX = width*7.5/25;
   picY = height*5/20;
-  picWidth = width*1/20;
-  picHeight = height*1/20;
+  picWidth = width*2/5;
+  picHeight = height*2.5/5;
   //2
   picWidthRatio2 = 1024.0/1024.0;
   picHeightRatio2 = 894.0/1024.0;
