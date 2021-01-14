@@ -1,4 +1,19 @@
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+
+
 //Global Variables
+Minim minim;
+int numberOfSongs = 4;
+AudioPlayer[] song = new AudioPlayer[numberOfSongs];
+int currentSong = numberOfSongs - numberOfSongs;
+//
+boolean play;
+boolean playButton;
 //
 //images
 PImage pic1, pic2, pic3;
@@ -50,6 +65,8 @@ float picX, picY, picWidth, picHeight, picWidthRatio, picHeightRatio;
 float picX2, picY2, picWidth2, picHeight2, picWidthRatio2, picHeightRatio2;
 float picX3, picY3, picWidth3, picHeight3, picWidthRatio3, picHeightRatio3;
 //play button
+float playX, playY, playWidth, playHeight, playDiameter;
+
 
 
 //
@@ -63,7 +80,7 @@ float strokeW = 20;
 boolean controlDown = false;
 boolean shiftDown = false;
 //
-boolean ciz=false, cizca=false, sil=false, caseDown=false, dropMenu1=false, dropMenu2=false, dropMenu3=false, art1=false, art2=false, art3=false, playButton=false;
+boolean ciz=false, cizca=false, sil=false, caseDown=false, dropMenu1=false, dropMenu2=false, dropMenu3=false, art1=false, art2=false, art3=false;
 //color set
 boolean cadBlueInk, sageInk, vegasGInk, yelCrayolaInk;
 boolean dgreenInk, fgreenInk, celandonInk, mMintInk;
@@ -78,6 +95,12 @@ void setup() {
   fullScreen();
   background(backgroundColor);
   population();
+  //
+  minim = new Minim(this);
+  song[0] = minim.loadFile("../Music/Ed-Sheeran-Castle-On-The-Hill-Official.mp3");
+  song[1] = minim.loadFile("../Music/Ed-Sheeran-Dive-Official-Audio.mp3");
+  song[2] = minim.loadFile("../Music/Ed-Sheeran-Galway-Girl-Official.mp3");
+  song[3] = minim.loadFile("../Music/ed-sheeran-nancy-mulligan.mp3");
   //
   //canvas
   
@@ -97,6 +120,11 @@ void setup() {
   rect(undoX, undoY, undoWidth, undoHeight);
   //redo
   rect(redoX, redoY, redoWidth, redoHeight);
+  //
+   fill(buttonHoverOver);
+  stroke(buttonHoverOver);
+  rect(musicX, musicY, musicWidth, musicHeight);
+  //
   //
   //
   undo = new Undo(10);
@@ -129,6 +157,7 @@ void draw() {
   redoButton();
   caseDown();
   caseDown2();
+  playButton();
   //
   if ( controlDown == true && mouseX>undoX  && mouseX<undoX+undoWidth  && mouseY>undoY && mouseY<undoY+undoHeight) {
     undoButton();
@@ -203,7 +232,7 @@ void mousePressed() {
     controlDown = true;
   }
   //
-  
+  playPressed();
   //
   colorBPressed();
   artPressed();
