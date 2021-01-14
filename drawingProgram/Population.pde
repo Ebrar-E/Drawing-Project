@@ -146,6 +146,11 @@ void population() {
   musicY = height*1.3/20;
   musicWidth = width*4/30;
   musicHeight = height*3/30;
+  //play button
+  playX = width*20*30;
+  playY = height*2/20;
+  playWidth = width*1/30;
+  playHeight = height*1/20;
 
 
 }//end of population
