@@ -130,7 +130,7 @@ void draw() {
   caseDown();
   caseDown2();
   //
-  if ( controlDown == true) {
+  if ( controlDown == true && mouseX>undoX  && mouseX<undoX+undoWidth  && mouseY>undoY && mouseY<undoY+undoHeight) {
     undoButton();
   }
 }//end of draw
