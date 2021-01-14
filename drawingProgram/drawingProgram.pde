@@ -21,6 +21,8 @@ float paletteX, paletteY, paletteWidth, paletteHeight;
 float caseX, caseY, caseWidth, caseHeight;
 //line art
 float artX, artY, artWidth, artHeight;
+//music
+float musicX, musicY, musicWidth, musicHeight;
 //clear
 float clearX, clearY, clearWidth, clearHeight;
 //undo 
@@ -123,6 +125,7 @@ void draw() {
   redoButton();
   caseDown();
   caseDown2();
+  musicButton();
   //
   if ( controlDown == true) {
     undoButton();

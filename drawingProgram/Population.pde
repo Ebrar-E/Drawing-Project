@@ -141,6 +141,11 @@ void population() {
   picWidth3 = width*2/5;
   picHeight3 = height*2/5;
   //
+  //music
+  musicX = width*13/30;
+  musicY = height*1.3/20;
+  musicWidth = width*4/30;
+  musicHeight = height*3/30;
 
 
 }//end of population
