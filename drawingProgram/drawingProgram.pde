@@ -48,6 +48,7 @@ float picX2, picY2, picWidth2, picHeight2, picWidthRatio2, picHeightRatio2;
 float picX3, picY3, picWidth3, picHeight3, picWidthRatio3, picHeightRatio3;
 //
 float strokeThicess, drawingDiameter;
+float strokeW = 20;
 //
 
 
@@ -106,9 +107,12 @@ void draw() {
   //the lines
   if (ciz == true) {
     fill(ink);
+    strokeWeight(strokeW);
     stroke(ink);
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
+  //
+  //
   quitButton();
   paletteButton();
   caseButton();
@@ -206,6 +210,12 @@ void mousePressed() {
 }//end of mousePressed
 
 
+
+void mouseWheel(MouseEvent e) {
+  float amt = e.getCount();
+  float newWid = strokeW+=amt;
+  strokeW = max(newWid, 0); // to make sure its always  >0
+}
 
 
 //the confusing part 
