@@ -63,11 +63,12 @@ float strokeW = 20;
 boolean controlDown = false;
 boolean shiftDown = false;
 //
-boolean ciz=false, cizca=false, caseDown=false, dropMenu1=false, dropMenu2=false, dropMenu3=false, art1=false, art2=false, art3=false, playButton=false;
+boolean ciz=false, cizca=false, sil=false, caseDown=false, dropMenu1=false, dropMenu2=false, dropMenu3=false, art1=false, art2=false, art3=false, playButton=false;
 //color set
 boolean cadBlueInk, sageInk, vegasGInk, yelCrayolaInk;
 boolean dgreenInk, fgreenInk, celandonInk, mMintInk;
 boolean jetInk, lgrayInk, grulloInk, ashGlInk;
+boolean pencilInk, resetInk;
 
 
 Undo undo;
@@ -110,14 +111,13 @@ void mouseReleased() {
 
 void draw() {
   //
-  //the lines
+  //the pencil
   if (ciz == true) {
     fill(ink);
     strokeWeight(strokeW);
     stroke(ink);
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
-  //
   //
   quitButton();
   paletteButton();
@@ -128,7 +128,8 @@ void draw() {
   undoButton();
   redoButton();
   caseDown();
-  caseDown2();;//
+  caseDown2();
+  //
   if ( controlDown == true) {
     undoButton();
   }
@@ -197,10 +198,11 @@ void mousePressed() {
     dropMenu3 = false;
   }
   //
+  }
+  //
   if ( mouseX>=undoX && mouseX<=undoX+undoWidth && mouseY>=undoY && mouseY<=undoY+undoHeight ) {
     controlDown = true;
   }
-  //
   //
   
   //

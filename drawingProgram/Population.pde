@@ -19,6 +19,7 @@ void population() {
   caseY = height*2/20;
   caseWidth = width*4/30;
   caseHeight = height*2/30;
+  //
   //line art
   artX = width*1/30;
   artY = height*17/20;

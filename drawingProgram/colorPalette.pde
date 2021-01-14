@@ -151,6 +151,14 @@ void inkPopulation() {
   if (jetInk == true) {
     ink = jet;
   }
+  //pencil
+  if (pencilInk == true) {
+    ink = jet;
+  }
+  //eraser
+  if (resetInk == true) {
+    ink = reset;
+  }
 }//end of inkPopulation
 
 
@@ -179,6 +187,8 @@ void colorBPressed() {
     grulloInk=false;
     lgrayInk=false;
     jetInk=false;
+    pencilInk=false;
+    resetInk=false;
   }
   //2
   if ( mouseX>colorB2X  && mouseX<colorB2X+colorBWidth  && mouseY>colorB2Y && mouseY<colorB2Y+colorBHeight) {
@@ -194,6 +204,8 @@ void colorBPressed() {
     grulloInk=false;
     lgrayInk=false;
     jetInk=false;
+    pencilInk=false;
+    resetInk=false;
   }
   //3
   if ( mouseX>colorB3X  && mouseX<colorB3X+colorBWidth  && mouseY>colorB3Y && mouseY<colorB3Y+colorBHeight) {
@@ -209,6 +221,8 @@ void colorBPressed() {
     grulloInk=false;
     lgrayInk=false;
     jetInk=false;
+    pencilInk=false;
+    resetInk=false;
   }
   //4
   if ( mouseX>colorB4X  && mouseX<colorB4X+colorBWidth  && mouseY>colorB4Y && mouseY<colorB4Y+colorBHeight) {
@@ -224,6 +238,8 @@ void colorBPressed() {
     grulloInk=false;
     lgrayInk=false;
     jetInk=false;
+    pencilInk=false;
+    resetInk=false;
   }
   //5
   if ( mouseX>colorB5X  && mouseX<colorB5X+colorBWidth  && mouseY>colorB5Y && mouseY<colorB5Y+colorBHeight) {
@@ -239,6 +255,8 @@ void colorBPressed() {
     grulloInk=false;
     lgrayInk=false;
     jetInk=false;
+    pencilInk=false;
+    resetInk=false;
   }
   //6
   if ( mouseX>colorB6X  && mouseX<colorB6X+colorBWidth  && mouseY>colorB6Y && mouseY<colorB6Y+colorBHeight) {
@@ -254,6 +272,8 @@ void colorBPressed() {
     grulloInk=false;
     lgrayInk=false;
     jetInk=false;
+    pencilInk=false;
+    resetInk=false;
   }
   //7
   if ( mouseX>colorB7X  && mouseX<colorB7X+colorBWidth  && mouseY>colorB7Y && mouseY<colorB7Y+colorBHeight) {
@@ -269,6 +289,8 @@ void colorBPressed() {
     grulloInk=false;
     lgrayInk=false;
     jetInk=false;
+    pencilInk=false;
+    resetInk=false;
   }
   //8
   if ( mouseX>colorB8X  && mouseX<colorB8X+colorBWidth  && mouseY>colorB8Y && mouseY<colorB8Y+colorBHeight) {
@@ -284,6 +306,8 @@ void colorBPressed() {
     grulloInk=false;
     lgrayInk=false;
     jetInk=false;
+    pencilInk=false;
+    resetInk=false;
   }
   //9
   if ( mouseX>colorB9X  && mouseX<colorB9X+colorBWidth  && mouseY>colorB9Y && mouseY<colorB9Y+colorBHeight) {
@@ -299,6 +323,8 @@ void colorBPressed() {
     grulloInk=false;
     lgrayInk=false;
     jetInk=false;
+    pencilInk=false;
+    resetInk=false;
   }
   //10
   if ( mouseX>colorB10X  && mouseX<colorB10X+colorBWidth  && mouseY>colorB10Y && mouseY<colorB10Y+colorBHeight) {
@@ -314,6 +340,8 @@ void colorBPressed() {
     grulloInk=true;
     lgrayInk=false;
     jetInk=false;
+    pencilInk=false;
+    resetInk=false;
   }
   //11
   if ( mouseX>colorB11X  && mouseX<colorB11X+colorBWidth  && mouseY>colorB11Y && mouseY<colorB11Y+colorBHeight) {
@@ -329,6 +357,8 @@ void colorBPressed() {
     grulloInk=false;
     lgrayInk=true;
     jetInk=false;
+    pencilInk=false;
+    resetInk=false;
   }
   //12
   if ( mouseX>colorB12X  && mouseX<colorB12X+colorBWidth  && mouseY>colorB12Y && mouseY<colorB12Y+colorBHeight) {
@@ -344,6 +374,41 @@ void colorBPressed() {
     grulloInk=false;
     lgrayInk=false;
     jetInk=true;
+    resetInk=false;
+  }
+  //pencil
+  if ( mouseX>caseDownX  && mouseX<caseDownX+caseDownWidth  && mouseY>caseDownY && mouseY<caseDownY+caseDownHeight) {
+    yelCrayolaInk=false;
+    vegasGInk=false;
+    sageInk=false;
+    cadBlueInk=false;
+    mMintInk=false;
+    celandonInk=false;
+    fgreenInk=false;
+    dgreenInk=false;
+    ashGlInk=false;
+    grulloInk=false;
+    lgrayInk=false;
+    jetInk=false;
+    pencilInk=true;
+    resetInk=false;
+  }
+  //eraser
+  if ( mouseX>caseDownX2  && mouseX<caseDownX2+caseDownWidth2  && mouseY>caseDownY2 && mouseY<caseDownY2+caseDownHeight2) {
+    yelCrayolaInk=false;
+    vegasGInk=false;
+    sageInk=false;
+    cadBlueInk=false;
+    mMintInk=false;
+    celandonInk=false;
+    fgreenInk=false;
+    dgreenInk=false;
+    ashGlInk=false;
+    grulloInk=false;
+    lgrayInk=false;
+    jetInk=false;
+    pencilInk=false;
+    resetInk=true;
   }
   //
 }//end of colorBPressed
