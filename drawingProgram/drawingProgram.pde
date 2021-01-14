@@ -112,7 +112,7 @@ void mouseReleased() {
 void draw() {
   //
   //the pencil
-  if (ciz == true) {
+  if (ciz == true && mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
     fill(ink);
     strokeWeight(strokeW);
     stroke(ink);
@@ -198,7 +198,6 @@ void mousePressed() {
     dropMenu3 = false;
   }
   //
-  }
   //
   if ( mouseX>=undoX && mouseX<=undoX+undoWidth && mouseY>=undoY && mouseY<=undoY+undoHeight ) {
     controlDown = true;

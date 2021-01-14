@@ -82,19 +82,19 @@ void caseDown() {
     fill(reset);
     caseDownInfo();
   }
-  if (dropMenu1==true && dropMenu4==false);
+  //if (dropMenu1==true && dropMenu4==false);
 }//end of caseDown 
 
 
 void caseDown2() {
-  if  (dropMenu4 == true && mouseX>caseX && mouseX<caseX+caseWidth && mouseY>caseY && mouseY<caseDownY2+caseDownHeight2) {
+  if  (dropMenu1 == true && mouseX>caseX && mouseX<caseX+caseWidth && mouseY>caseY && mouseY<caseDownY2+caseDownHeight2) {
     stroke (buttonColor2);
     fill (buttonColor2);
     rect(caseDownX2, caseDownY2, caseDownWidth2, caseDownHeight2);
     stroke (reset);
     fill(reset);
     caseDownInfo2();
-  } else if (dropMenu4 == true) {
+  } else if (dropMenu1 == true) {
     strokeWeight(4);
     stroke (buttonHoverOver2);
     fill (buttonHoverOver2);
@@ -103,5 +103,5 @@ void caseDown2() {
     fill(reset);
     caseDownInfo2();
   }
-  if (dropMenu1==false && dropMenu4==true);
+  //if (dropMenu1==false && dropMenu4==true);
 }//end of caseDown 
