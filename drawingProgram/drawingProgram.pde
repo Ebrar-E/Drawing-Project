@@ -3,7 +3,6 @@
 //images
 PImage pic1, pic2, pic3;
 //
-PImage play;
 //color set
 color ink;
 color backgroundColor=#0B032D, textColor=#FFFFFF, reset=#FFFFFF, quitButColor=#F2161D;
@@ -51,7 +50,7 @@ float picX, picY, picWidth, picHeight, picWidthRatio, picHeightRatio;
 float picX2, picY2, picWidth2, picHeight2, picWidthRatio2, picHeightRatio2;
 float picX3, picY3, picWidth3, picHeight3, picWidthRatio3, picHeightRatio3;
 //play button
-float playX, playY, playWidth, playHeight, playWidthRatio, playHeightRatio;
+
 
 //
 float strokeThicess, drawingDiameter;

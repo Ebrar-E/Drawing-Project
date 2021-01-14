@@ -147,13 +147,7 @@ void population() {
   musicWidth = width*4/30;
   musicHeight = height*3/30;
   //play button
-  play = loadImage("../Images/clipart404106.png");
-  playWidthRatio = 720.0/720.0;
-  playHeightRatio = 751.0/720.0;
-  playX = width*14/30;
-  playY = height*1/20;
-  playWidth = width*2/5;
-  playHeight = height*2/5;
+  
 
 
 }//end of population
