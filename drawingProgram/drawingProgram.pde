@@ -2,6 +2,8 @@
 //
 //images
 PImage pic1, pic2, pic3;
+//
+PImage play;
 //color set
 color ink;
 color backgroundColor=#0B032D, textColor=#FFFFFF, reset=#FFFFFF, quitButColor=#F2161D;
@@ -48,11 +50,9 @@ float colorBWidth2, colorBHeight2;
 float picX, picY, picWidth, picHeight, picWidthRatio, picHeightRatio;
 float picX2, picY2, picWidth2, picHeight2, picWidthRatio2, picHeightRatio2;
 float picX3, picY3, picWidth3, picHeight3, picWidthRatio3, picHeightRatio3;
-//music buttons
-float playX, playY, playWidth, playHeight;
-float pauseX, pauseY, pauseWidth, pauseHeight;
-float previousX, previousY, previousWidth, previousHeight;
-float nextX, nextY, nextWidth, nextHeight;
+//play button
+float playX, playY, playWidth, playHeight, playWidthRatio, playHeightRatio;
+
 //
 float strokeThicess, drawingDiameter;
 float strokeW = 20;
@@ -64,7 +64,7 @@ float strokeW = 20;
 boolean controlDown = false;
 boolean shiftDown = false;
 //
-boolean ciz=false, cizca=false, caseDown=false, dropMenu1=false, dropMenu2=false, dropMenu3=false, dropMenu4=false, art1=false, art2=false, art3=false, playButton=false;
+boolean ciz=false, cizca=false, caseDown=false, dropMenu1=false, dropMenu2=false, dropMenu3=false, art1=false, art2=false, art3=false, playButton=false;
 //color set
 boolean cadBlueInk, sageInk, vegasGInk, yelCrayolaInk;
 boolean dgreenInk, fgreenInk, celandonInk, mMintInk;
@@ -129,8 +129,7 @@ void draw() {
   undoButton();
   redoButton();
   caseDown();
-  caseDown2();
-  musicButton();;//
+  caseDown2();;//
   if ( controlDown == true) {
     undoButton();
   }
@@ -197,12 +196,6 @@ void mousePressed() {
     dropMenu3 = true;
   } else {
     dropMenu3 = false;
-  }
-  //
-  if (mouseX>musicX && mouseX<musicX+musicWidth && mouseY>musicY && mouseY<musicY+musicHeight) {
-    dropMenu4 = true;
-  } else {
-    dropMenu4 = false;
   }
   //
   if ( mouseX>=undoX && mouseX<=undoX+undoWidth && mouseY>=undoY && mouseY<=undoY+undoHeight ) {
