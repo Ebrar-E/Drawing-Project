@@ -116,10 +116,6 @@ void setup() {
   rect(artX, artY, artWidth, artHeight);
   //clear
   rect(clearX, clearY, clearWidth, clearHeight);
-  //undo
-  rect(undoX, undoY, undoWidth, undoHeight);
-  //redo
-  rect(redoX, redoY, redoWidth, redoHeight);
   //
    fill(buttonHoverOver);
   stroke(buttonHoverOver);
@@ -153,17 +149,12 @@ void draw() {
   artButtons();
   inkPopulation();
   clearButton();
-  undoButton();
-  redoButton();
   caseDown();
   caseDown2();
   playButton();
   nextButton();
   previousButton();
   //
-  if ( controlDown == true && mouseX>undoX  && mouseX<undoX+undoWidth  && mouseY>undoY && mouseY<undoY+undoHeight) {
-    undoButton();
-  }
 }//end of draw
 
 
@@ -230,9 +221,6 @@ void mousePressed() {
   }
   //
   //
-  if ( mouseX>=undoX && mouseX<=undoX+undoWidth && mouseY>=undoY && mouseY<=undoY+undoHeight ) {
-    controlDown = true;
-  }
   //
   playPressed();
   nextPressed();
