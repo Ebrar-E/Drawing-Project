@@ -30,16 +30,6 @@ void population() {
   clearY = height*17/20;
   clearWidth = width*4/30;
   clearHeight = height*2/30;
-  //undo
-  undoX = width*1.5/30;
-  undoY = height*11/20;
-  undoWidth = width*1/30;
-  undoHeight = height*1.5/30;
-  //redo
-  redoX = width*3.5/30;
-  redoY = height*11/20;
-  redoWidth = width*1/30;
-  redoHeight = height*1.5/30;
   //case down
   caseDownX = width*25.5/30;
   caseDownY = height*4.5/20;
@@ -146,11 +136,18 @@ void population() {
   musicY = height*1/30;
   musicWidth =width*1.3/10;
   musicHeight = height*1.2/10;
+  //previous button
+  previousX = width*16/30;
+  previousY = height*1.9/20;
+  previousDiameter = height*1/20;
   //play button
   playX = width*15/30;
   playY = height*1.9/20;
   playDiameter = height*1.8/20;
-  //
+  //next button
+  nextX = width*14/30;
+  nextY = height*1.9/20;
+  nextDiameter = height*1/20;
   
 
 

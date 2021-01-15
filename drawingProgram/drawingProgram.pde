@@ -41,10 +41,6 @@ float artX, artY, artWidth, artHeight;
 float musicX, musicY, musicWidth, musicHeight;
 //clear
 float clearX, clearY, clearWidth, clearHeight;
-//undo 
-float undoX, undoY, undoWidth, undoHeight;
-//redo
-float redoX, redoY, redoWidth, redoHeight;
 //case down
 float caseDownX, caseDownY, caseDownWidth, caseDownHeight;
 float caseDownX2, caseDownY2, caseDownWidth2, caseDownHeight2;
@@ -65,7 +61,11 @@ float picX, picY, picWidth, picHeight, picWidthRatio, picHeightRatio;
 float picX2, picY2, picWidth2, picHeight2, picWidthRatio2, picHeightRatio2;
 float picX3, picY3, picWidth3, picHeight3, picWidthRatio3, picHeightRatio3;
 //play button
-float playX, playY, playWidth, playHeight, playDiameter;
+float playX, playY, playDiameter;
+//next button
+float nextX, nextY, nextDiameter;
+//previous button
+float previousX, previousY, previousDiameter;
 
 
 
@@ -97,10 +97,10 @@ void setup() {
   population();
   //
   minim = new Minim(this);
-  song[0] = minim.loadFile("../Music/Ed-Sheeran-Castle-On-The-Hill-Official.mp3");
-  song[1] = minim.loadFile("../Music/Ed-Sheeran-Dive-Official-Audio.mp3");
-  song[2] = minim.loadFile("../Music/Ed-Sheeran-Galway-Girl-Official.mp3");
-  song[3] = minim.loadFile("../Music/ed-sheeran-nancy-mulligan.mp3");
+  song[0] = minim.loadFile("../Music/Large Smile Mood - Nico Staf.mp3");
+  song[1] = minim.loadFile("../Music/Lights - Patrick Patrikios.mp3");
+  song[2] = minim.loadFile("../Music/Simple - Patrick Patrikios.mp3");
+  song[3] = minim.loadFile("../Music/Two Moons - Bobby Richards.mp3");
   //
   //canvas
   
@@ -158,6 +158,8 @@ void draw() {
   caseDown();
   caseDown2();
   playButton();
+  nextButton();
+  previousButton();
   //
   if ( controlDown == true && mouseX>undoX  && mouseX<undoX+undoWidth  && mouseY>undoY && mouseY<undoY+undoHeight) {
     undoButton();
@@ -233,6 +235,8 @@ void mousePressed() {
   }
   //
   playPressed();
+  nextPressed();
+  previousPressed();
   //
   colorBPressed();
   artPressed();
