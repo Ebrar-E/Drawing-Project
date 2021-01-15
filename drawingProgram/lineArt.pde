@@ -109,8 +109,6 @@ void artDown() {
     fill(reset);
     artDownInfo();
   }
-  song[4].play();
-    song[4].rewind();
   if (art1 == true && art2 == false && art3 == false) image(pic1, picX, picY, picWidth, picHeight);
   art1 = false;
 }//end of caseDown 
