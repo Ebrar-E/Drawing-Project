@@ -170,11 +170,10 @@ void colorBPressed() {
     } else {
       ciz = false;
     }
-    drawingDiameter = width*1/100;
   }
   //
   //1
-  if ( mouseX>colorB1X  && mouseX<colorB1X+colorBWidth2  && mouseY>colorB1Y && mouseY<colorB1Y+colorBHeight2) {
+  if ( mouseX>colorB1X  && mouseX<colorB1X+colorBWidth  && mouseY>colorB1Y && mouseY<colorB1Y+colorBHeight) {
     yelCrayolaInk=true;
     vegasGInk=false;
     sageInk=false;
@@ -189,6 +188,8 @@ void colorBPressed() {
     jetInk=false;
     pencilInk=false;
     resetInk=false;
+    sound[1].play();
+sound[1].rewind();
   }
   //2
   if ( mouseX>colorB2X  && mouseX<colorB2X+colorBWidth  && mouseY>colorB2Y && mouseY<colorB2Y+colorBHeight) {
@@ -206,6 +207,8 @@ void colorBPressed() {
     jetInk=false;
     pencilInk=false;
     resetInk=false;
+    sound[1].play();
+sound[1].rewind();
   }
   //3
   if ( mouseX>colorB3X  && mouseX<colorB3X+colorBWidth  && mouseY>colorB3Y && mouseY<colorB3Y+colorBHeight) {
@@ -223,6 +226,8 @@ void colorBPressed() {
     jetInk=false;
     pencilInk=false;
     resetInk=false;
+    sound[1].play();
+sound[1].rewind();
   }
   //4
   if ( mouseX>colorB4X  && mouseX<colorB4X+colorBWidth  && mouseY>colorB4Y && mouseY<colorB4Y+colorBHeight) {
@@ -240,6 +245,8 @@ void colorBPressed() {
     jetInk=false;
     pencilInk=false;
     resetInk=false;
+    sound[1].play();
+sound[1].rewind();
   }
   //5
   if ( mouseX>colorB5X  && mouseX<colorB5X+colorBWidth  && mouseY>colorB5Y && mouseY<colorB5Y+colorBHeight) {
@@ -257,6 +264,8 @@ void colorBPressed() {
     jetInk=false;
     pencilInk=false;
     resetInk=false;
+    sound[1].play();
+sound[1].rewind();
   }
   //6
   if ( mouseX>colorB6X  && mouseX<colorB6X+colorBWidth  && mouseY>colorB6Y && mouseY<colorB6Y+colorBHeight) {
@@ -274,6 +283,8 @@ void colorBPressed() {
     jetInk=false;
     pencilInk=false;
     resetInk=false;
+    sound[1].play();
+sound[1].rewind();
   }
   //7
   if ( mouseX>colorB7X  && mouseX<colorB7X+colorBWidth  && mouseY>colorB7Y && mouseY<colorB7Y+colorBHeight) {
@@ -291,6 +302,8 @@ void colorBPressed() {
     jetInk=false;
     pencilInk=false;
     resetInk=false;
+    sound[1].play();
+sound[1].rewind();
   }
   //8
   if ( mouseX>colorB8X  && mouseX<colorB8X+colorBWidth  && mouseY>colorB8Y && mouseY<colorB8Y+colorBHeight) {
@@ -308,6 +321,8 @@ void colorBPressed() {
     jetInk=false;
     pencilInk=false;
     resetInk=false;
+    sound[1].play();
+sound[1].rewind();
   }
   //9
   if ( mouseX>colorB9X  && mouseX<colorB9X+colorBWidth  && mouseY>colorB9Y && mouseY<colorB9Y+colorBHeight) {
@@ -325,6 +340,8 @@ void colorBPressed() {
     jetInk=false;
     pencilInk=false;
     resetInk=false;
+    sound[1].play();
+sound[1].rewind();
   }
   //10
   if ( mouseX>colorB10X  && mouseX<colorB10X+colorBWidth  && mouseY>colorB10Y && mouseY<colorB10Y+colorBHeight) {
@@ -342,6 +359,8 @@ void colorBPressed() {
     jetInk=false;
     pencilInk=false;
     resetInk=false;
+    sound[1].play();
+sound[1].rewind();
   }
   //11
   if ( mouseX>colorB11X  && mouseX<colorB11X+colorBWidth  && mouseY>colorB11Y && mouseY<colorB11Y+colorBHeight) {
@@ -359,6 +378,8 @@ void colorBPressed() {
     jetInk=false;
     pencilInk=false;
     resetInk=false;
+    sound[1].play();
+sound[1].rewind();
   }
   //12
   if ( mouseX>colorB12X  && mouseX<colorB12X+colorBWidth  && mouseY>colorB12Y && mouseY<colorB12Y+colorBHeight) {
@@ -375,6 +396,8 @@ void colorBPressed() {
     lgrayInk=false;
     jetInk=true;
     resetInk=false;
+    sound[1].play();
+sound[1].rewind();
   }
   //pencil
   if ( mouseX>caseDownX  && mouseX<caseDownX+caseDownWidth  && mouseY>caseDownY && mouseY<caseDownY+caseDownHeight) {
@@ -392,6 +415,8 @@ void colorBPressed() {
     jetInk=false;
     pencilInk=true;
     resetInk=false;
+    sound[1].play();
+sound[1].rewind();
   }
   //eraser
   if ( mouseX>caseDownX2  && mouseX<caseDownX2+caseDownWidth2  && mouseY>caseDownY2 && mouseY<caseDownY2+caseDownHeight2) {
@@ -409,6 +434,8 @@ void colorBPressed() {
     jetInk=false;
     pencilInk=false;
     resetInk=true;
+    sound[1].play();
+sound[1].rewind();
   }
   //
 }//end of colorBPressed

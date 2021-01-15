@@ -40,5 +40,7 @@ void clearPressed() {
     art3 = false;
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     ciz = false;
+    sound[1].play();
+sound[1].rewind();
   }
 }//end of clearPressed

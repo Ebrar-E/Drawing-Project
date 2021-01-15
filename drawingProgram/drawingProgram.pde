@@ -216,6 +216,7 @@ void mousePressed() {
     dropMenu1 = false;
   }
   //
+  //
   if (mouseX>paletteX && mouseX<paletteX+paletteWidth && mouseY>paletteY && mouseY<paletteY+paletteHeight) {
     dropMenu2 = true;
   } else {

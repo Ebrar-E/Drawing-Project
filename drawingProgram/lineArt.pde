@@ -144,6 +144,8 @@ void artDown3() {
     stroke (reset);
     fill(reset);
     artDownInfo3();
+    sound[1].play();
+sound[1].rewind();
   } else if (dropMenu3 == true) {
     strokeWeight(4);
     stroke (buttonHoverOver2);
@@ -152,6 +154,8 @@ void artDown3() {
     stroke (reset);
     fill(reset);
     artDownInfo3();
+    sound[1].play();
+sound[1].rewind();
   }
   if (art1 == false && art2 == false && art3 == true) image(pic3, picX3, picY3, picWidth3, picHeight3);
   art3 =  false;
@@ -165,6 +169,8 @@ void artPressed() {
     art2 = false;
     art3 = false;
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
+    sound[1].play();
+sound[1].rewind();
   }
   //2
   if (mouseX>artDownX2 && mouseX<artDownX2+artDownWidth2 && mouseY>artDownY2 && mouseY<artDownY2+artDownHeight2) {
@@ -172,6 +178,8 @@ void artPressed() {
     art2 = true;
     art3 = false;
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
+    sound[1].play();
+sound[1].rewind();
   }
   //3
   if (mouseX>artDownX3 && mouseX<artDownX3+artDownWidth3 && mouseY>artDownY3 && mouseY<artDownY3+artDownHeight3) {
@@ -179,5 +187,7 @@ void artPressed() {
     art2 = false;
     art3 = true;
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
+    sound[1].play();
+sound[1].rewind();
   }
 }//end of artPressed

@@ -36,6 +36,7 @@ void caseButton() {
 
 
 
+
 void caseDownInfo() {
   String caseDownText="Pencil";
   PFont caseDownFont;
@@ -62,7 +63,7 @@ void caseDownInfo2() {
   text(caseDownText2, caseDownX2, caseDownY2, caseDownWidth2, caseDownHeight2);
   fill(reset);
 }//end of caseDownInfo
-  
+
 
 
 void caseDown() {
@@ -73,6 +74,8 @@ void caseDown() {
     stroke (reset);
     fill(reset);
     caseDownInfo();
+    sound[1].play();
+sound[1].rewind();
   } else if (dropMenu1 == true) {
     strokeWeight(4);
     stroke (buttonHoverOver2);
@@ -81,6 +84,8 @@ void caseDown() {
     stroke (reset);
     fill(reset);
     caseDownInfo();
+    sound[1].play();
+sound[1].rewind();
   }
   //if (dropMenu1==true && dropMenu4==false);
 }//end of caseDown 
