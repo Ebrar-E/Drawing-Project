@@ -202,14 +202,10 @@ void mousePressed() {
     {
       exit();
     }
-    song[4].play();
-    song[4].rewind();
   }
   //
   if (mouseX>caseX && mouseX<caseX+caseWidth && mouseY>caseY && mouseY<caseY+caseHeight) {
     dropMenu1 = true;
-    song[4].play();
-    song[4].rewind();
   } else {
     dropMenu1 = false;
   }
