@@ -12,6 +12,11 @@ int numberOfSongs = 4;
 AudioPlayer[] song = new AudioPlayer[numberOfSongs];
 int currentSong = numberOfSongs - numberOfSongs;
 //
+int numberOfSounds = 4;
+AudioPlayer[] sound = new AudioPlayer[numberOfSounds];
+int currentSound = numberOfSongs - numberOfSongs;
+//
+//
 boolean play;
 boolean playButton;
 //
@@ -102,7 +107,8 @@ void setup() {
   song[2] = minim.loadFile("../Music/Simple - Patrick Patrikios.mp3");
   song[3] = minim.loadFile("../Music/Two Moons - Bobby Richards.mp3");
   //
-  song[4] = minim.loadFile("../Music/Wood Bat Falling in Grass.mp3");
+  minim = new Minim(this);
+  sound[1] = minim.loadFile("../Music/Wood Bat Falling in Grass.mp3");
   //
   //canvas
   
