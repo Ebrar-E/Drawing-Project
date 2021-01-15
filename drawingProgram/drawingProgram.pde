@@ -102,6 +102,8 @@ void setup() {
   song[2] = minim.loadFile("../Music/Simple - Patrick Patrikios.mp3");
   song[3] = minim.loadFile("../Music/Two Moons - Bobby Richards.mp3");
   //
+  song[4] = minim.loadFile("../Music/Wood Bat Falling in Grass.mp3");
+  //
   //canvas
   
 
@@ -200,10 +202,14 @@ void mousePressed() {
     {
       exit();
     }
+    song[4].play();
+    song[4].rewind();
   }
   //
   if (mouseX>caseX && mouseX<caseX+caseWidth && mouseY>caseY && mouseY<caseY+caseHeight) {
     dropMenu1 = true;
+    song[4].play();
+    song[4].rewind();
   } else {
     dropMenu1 = false;
   }
